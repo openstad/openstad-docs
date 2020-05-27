@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](/README.md)
 * [Werken in het CMS - Algemeen](manual/cms-general/intro.md)
   * [Inloggen](manual/cms-general/login.md)
   * [De bouwstenen](manual/cms-general/pieces.md)
