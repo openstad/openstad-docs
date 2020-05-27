@@ -10,4 +10,6 @@ The ecosystem contains a CMS & sitebuilder that allows for pages to be build fro
 
 Check out the [Technical Documentation](technical/README.md) for the different servers we are managing and how to install the servers.
 
-Find out how to configure and build certain sites in the CMS in the [How to's ](manual/README.md). Or check out the available CMS modules and it's features in the [Modules overview](modules/README.md)
+For web editors: find out the CMS basics under [Werken in het CMS - Algemeen](manual/cms-general/intro.md) (in Dutch), and read about creating and filling pages under [Pagina's opbouwen](manual/creating-pages/intro.md) (in Dutch).
+
+Or check out the available CMS modules and it's features in the [Modules overview](modules/README.md)

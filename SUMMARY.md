@@ -39,9 +39,9 @@
   * [Video upload](modules/video-upload.md)
   * [Video 3d party](modules/video-3d-party.md)
 * [Technical Documentation](technical/README.md)
-* [Backup Tosh - Introduction](README.md)
+<!-- * [Backup Tosh - Introduction](README.md)
   * [How to's](manual/README.md)
     * [Creating a page](manual/creating-a-page.md)
     * [Customize styling](manual/customize-styling.md)
     * [Submitting & editing ideas](manual/submitting-editing-ideas.md)
-    * [Site settings](manual/site-settings.md)
+    * [Site settings](manual/site-settings.md) -->
