@@ -1,3 +1,3 @@
-# Werken in het CMS - Algemeen
+# OpenStad CMS basis
 
-De OpenStad software is gebouwd op het ApostropheCMS ([https://apostrophecms.com/](https://apostrophecms.com/)), een modern open-source content management system. Hieronder worden enkele algemene zaken toegelicht die belangrijk zijn om te begrijpen voordat we verder de diepte in duiken.
+In dit eerste onderdeel worden de belangrijkste basisprincipes van het CMS uitgelegd dat gebruikt wordt voor het opbouwen van de OpenStad websites. Deze zaken zijn goed om te weten voordat in het volgende onderdeel uitgelegd wordt hoe de pagina’s opgebouwd worden.

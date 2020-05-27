@@ -1,3 +1,5 @@
+
+
 ### Herstellen
 
 Er zijn twee manieren om gemaakte wijzigingen terug te draaien. Je kunt terug naar de laatste gecomitte versie van een pagina (die dus onder _Live_ zichtbaar is), en je kunt elke losse gemaakte wijziging op een pagina ongedaan maken. Dit gaat op twee verschillende manieren, die worden hieronder verder uitgelegd.
@@ -9,7 +11,17 @@ Om terug te keren naar de laatste gecomitte versie van een pagina, open je eerst
 
 (In _Draft_ modus) _Hoofdmenu_ → _Workflow_ → _Manage_ → _Revert_
 
-[TODO video, zie bovenstaande beschrijving]
+<br />
+
+<video autoplay loop width="100%">
+
+    <source src="/video/revert-to-live.mp4" type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+
+</video>
+
+<br />
 
 
 #### Losse wijzigingen ongedaan maken

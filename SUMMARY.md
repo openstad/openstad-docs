@@ -1,7 +1,7 @@
 # Summary
 
-* [Introduction](/README.md)
-* [Werken in het CMS - Algemeen](manual/cms-general/intro.md)
+* [Introduction](README.md)
+* [OpenStad CMS basis](manual/cms-general/intro.md)
   * [Inloggen](manual/cms-general/login.md)
   * [De bouwstenen](manual/cms-general/pieces.md)
   * [Live in-page editing](manual/cms-general/live-editing.md)
@@ -14,7 +14,7 @@
     * [Widgets](manual/creating-pages/add-widgets.md)
     * [Aanpassen en verwijderen](manual/creating-pages/edit-delete-widgets.md)
     * [Herstellen](manual/creating-pages/revert.md)
-* [Modules](modules/README.md)
+* [Widgets](modules/README.md)
   * [Accordeon](modules/accordeon.md)
   * [Agenda](modules/agenda.md)
   * [Area development map](modules/area-development-tool.md)
