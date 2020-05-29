@@ -6,4 +6,4 @@ Laten we beginnen bij het begin; om in het CMS te kunnen werken moet je ingelogd
 
 Aan de achterkant moeten we jouw e-mailadres _editor_-rechten geven. Dit gaat per website, als je op OpenStad-website A kunt bewerken, betekent dat niet automatisch dat dat ook op OpenStad-website B het geval is.
 
-Heeft de website geen knop om in te loggen? Plak dan _/oauth/login_ achter de basis-URL.
+Heeft de website geen knop om in te loggen? Plak dan _/admin/login_ achter de basis-URL.
