@@ -1,4 +1,4 @@
-#Waarschuwing in het CMS
+#Waarschuwingen in het CMS
 
 Op een aantal plekken worden waarschuwingen gegeven voor beheerders van de website.
 Hier volgt een uitleg wat deze betekenen:
