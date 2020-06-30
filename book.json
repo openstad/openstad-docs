@@ -1,0 +1,9 @@
+{
+    "plugins": ["insert-logo", "toggle-chapters"],
+    "pluginsConfig": {
+        "insert-logo": {
+            "url": "/logo.png",
+            "style": " display: block; background: none; width: 115px;"
+        }
+    }
+}

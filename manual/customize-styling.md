@@ -17,5 +17,4 @@ The logo can be change under the global settings.
 ![Section layout](/img/module-styles.png)
 
 
-
 ## Customize site styling external stylesheet

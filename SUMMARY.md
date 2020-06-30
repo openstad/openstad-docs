@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [User manual](README.md)
+* [User manual](manual/README.md)
    * [OpenStad CMS basis](manual/cms-general/intro.md)
      * [Inloggen](manual/cms-general/login.md)
      * [De bouwstenen](manual/cms-general/pieces.md)
