@@ -18,6 +18,9 @@
    * [How to's](manual/how-tos/README.md)
      * [Importing](manual/how-tos/importing-plans.md)
      * [Vormgeving & logo aanpassen](manual/how-tos/styling.md)
+   * [Overig](manual/miscellaneous/README.md)
+     * [Waarschuwingen](manual/miscellaneous/warnings.md)
+
    * [Widgets referentie](modules/README.md)
      * [Accordeon](modules/accordeon.md)
      * [Agenda](modules/agenda.md)
