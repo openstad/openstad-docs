@@ -1,0 +1,31 @@
+{
+  "name": "openstad-docs",
+  "version": "1.0.0",
+  "description": "Docs package ",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "gitbook-plugin-bandwidth-toggle-chapters": "0.0.4",
+    "gitbook-plugin-theme-hqbook": "file:./gitbook-plugin-theme-hqbook",
+    "gitbook-plugin-toggle-chapters": "0.0.3",
+    "gitbook-plugin-videoplayer": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amsterdam/openstad-docs.git"
+  },
+  "keywords": [
+    "openstad",
+    "documentation"
+  ],
+  "author": "Tosh Koevooets",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Amsterdam/openstad-docs/issues"
+  },
+  "homepage": "https://github.com/Amsterdam/openstad-docs#readme"
+}

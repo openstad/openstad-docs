@@ -1,0 +1,72 @@
+{
+  "_from": "gitbook-plugin-theme-hqbook",
+  "_id": "gitbook-plugin-theme-hqbook@1.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-3WmsPCljU1ggFJ7Csy0DYoGSuMdCCJhEUv4GR5uANdQ5IKC30zDS6sEvhwn0RlQEyPDAV5u7DQmWrtL6UwsMxw==",
+  "_location": "/gitbook-plugin-theme-hqbook",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "gitbook-plugin-theme-hqbook",
+    "name": "gitbook-plugin-theme-hqbook",
+    "escapedName": "gitbook-plugin-theme-hqbook",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/gitbook-plugin-theme-hqbook/-/gitbook-plugin-theme-hqbook-1.0.7.tgz",
+  "_shasum": "9d82a20786b9a62e1ccda143ebcff6612286b208",
+  "_spec": "gitbook-plugin-theme-hqbook",
+  "_where": "/Users/toshkoevoets/Documents/code/openstad-docs",
+  "author": {
+    "name": "chenhaoqiang"
+  },
+  "bugs": {
+    "url": "https://github.com/HaoqiangChen/gitbook-plugin-theme-hqbook/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A Gitbook theme for hqbook",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
+  "gitbook": {
+    "properties": {
+      "copyButtons": {
+        "default": true,
+        "title": "Adds buttons to copy the commands",
+        "type": "boolean"
+      },
+      "copyLines": {
+        "default": true,
+        "title": "When displaying code with multiple lines, line numbers will be added",
+        "type": "boolean"
+      },
+      "dragSplitter": {
+        "default": true,
+        "title": "Add a drag-and-drop bar to adjust the width on both sides",
+        "type": "boolean"
+      }
+    }
+  },
+  "homepage": "https://github.com/HaoqiangChen/gitbook-plugin-theme-hqbook#readme",
+  "keywords": [
+    "gitbook",
+    "theme-hqbook",
+    "prism"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "gitbook-plugin-theme-hqbook",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaoqiangChen/gitbook-plugin-theme-hqbook.git"
+  },
+  "scripts": {},
+  "version": "1.0.7"
+}

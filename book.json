@@ -1,9 +1,26 @@
 {
-    "plugins": ["insert-logo", "toggle-chapters"],
-    "pluginsConfig": {
-        "insert-logo": {
-            "url": "/logo.png",
-            "style": " display: block; background: none; width: 115px;"
-        }
-    }
+    "plugins": ["theme-hqbook", "bandwidth-toggle-chapters", "toggle-chapters", "video-player"],
+    "variables": {
+     "themeHqbook":{
+         "nav":[
+             {
+                 "url": "/",
+                 "name": "User manual"
+             }
+         ]
+     }
+   },
+   "pluginsConfig": {
+       "theme-hqbook":{
+           "favicon": "./favicon.ico",
+           "logo":"/logo.png",
+           "search-placeholder":"Search...",
+           "copyButtons": true,
+           "copyLines": true,
+           "dragSplitter": true,
+           "hide-elements": [
+               ".summary .gitbook-link"
+           ]
+       }
+   }
 }
