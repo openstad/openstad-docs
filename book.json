@@ -1,11 +1,11 @@
 {
-    "plugins": ["theme-hqbook", "bandwidth-toggle-chapters", "toggle-chapters", "video-player"],
+    "plugins": ["theme-hqbook", "toggle-chapters"],
     "variables": {
      "themeHqbook":{
          "nav":[
              {
                  "url": "/",
-                 "name": "User manual"
+                 "name": ""
              }
          ]
      }

@@ -62,7 +62,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
     var $search = $('#book-search-input');
     var placeholder = pluginConfig["search-placeholder"] || "输入关键字搜索"
     $search.find("input").attr("placeholder", placeholder);
-    $search.append("<span id='searchBtn'>Search</span>");
+  //  $search.append("<span id='searchBtn'>Search</span>");
     $search.focus();
     $("#searchBtn").click(function (e) {
     });
@@ -288,7 +288,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
     });
 
 	if (pluginConfig.dragSplitter) {
-      setSplitter();
+      //setSplitter();
     }
   });
 });
