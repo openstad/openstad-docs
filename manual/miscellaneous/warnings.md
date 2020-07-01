@@ -13,3 +13,6 @@ Hier volgt een uitleg wat deze betekenen:
 
 ### Resource page type is set but no active resource is found
 resource page type is set but no active resource is found, probably because there is no id in the url. For users who are not logged in a 404 - not found page will be shown
+
+
+### Voting type is not set to likes in  site settings but liking is turned on in resource overview
