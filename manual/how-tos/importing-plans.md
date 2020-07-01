@@ -32,3 +32,21 @@ Het geaccepteerde formaat voor importeren is CSV (comma seperated values) of TSV
 ##Gekke tekens na importeren
 Het kan gebeuren dat na importeren (of exporteren) ineens gekke characters verschijnen. Dit heeft er mee te maken dat er verschillende "charsets" bestaan.
 In dit geval kies bij importeren (of exporteren) gekozen wordt voor utf-8,
+
+
+*   Exporteren
+    *   Opslaan als CSV
+        *   Korte uitleg en link naar wikipedia over bestandsformaat
+    *   Voorbeeld: Openen in Excel
+        *   Kort uitleggen (Data > van tekst > …), verder linken naar uitleg op andere websites
+        *   Overzicht/uitleg van de kolommen
+            *   Kan uitgebreider als er extraData velden zijn?
+            *   Locatie: link met Google Maps
+*   Bewerken in spreadsheet-software
+*   Importeren
+    *   CSV bestand
+        *   Korte uitleg en link naar wikipedia over bestandsformaat
+    *   Voorbeeld: exporteren vanuit Excel
+        *   Kort uitleggen, verwijzen naar externe bron met meer uitleg
+        *   Checken: delimiter teken
+    *   Verschil tussen toevoegen en updaten
