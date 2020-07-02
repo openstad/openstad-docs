@@ -1,4 +1,7 @@
-# Indienen van plannen
+# Plannen indienen
+
+_Status: WIP_
 
 * Formulier
-* Overview
+* admin panel instellingen
+* Thank you email

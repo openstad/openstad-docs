@@ -1,4 +1,4 @@
-#Importen van plannen (ideas)
+# Plannen exporteren en importeren
 
 Het is ook mogelijk om plannen up te loaden. Dit wordt onder andere gebruikt als burgers plannen hebben upgeload en op een nieuwe site en deze, lees meer bij usecases hoe dit gebruikt wordt.
 
