@@ -18,3 +18,5 @@ resource page type is set but no active resource is found, probably because ther
 ### Voting type is not set to likes in  site settings but liking is turned on in resource overview
 
 ### a resource representation widget won't work untill the page type is set to resource and a type of resource is selected, this can be fixed in page settings on the bottom of the page.
+
+###  this template will only work properly with idea resource
