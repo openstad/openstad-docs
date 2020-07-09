@@ -2,6 +2,8 @@
 
 * [Introduction](README.md)
 * [Participation processes (Dutch)](processes/README.md)
+  * [Ontwerpwedstrijd](processes/design-competition.md)
+  * [Simpele stemsite](processes/voting.md)
   * [Participatief begroten](processes/participatory-budgeting.md)
 * [User manual (Dutch)](manual/README.md)
    * [OpenStad CMS basis](manual/cms-general/intro.md)
