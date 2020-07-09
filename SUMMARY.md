@@ -2,6 +2,8 @@
 
 * [Introduction](README.md)
 * [Participation processes (Dutch)](processes/README.md)
+  * [Voorkeurspeiling](processes/poll.md)
+  * [Wedstrijd](processes/contest.md)
   * [Participatief begroten](processes/participatory-budgeting.md)
 * [User manual (Dutch)](manual/README.md)
    * [OpenStad CMS basis](manual/cms-general/intro.md)
@@ -31,6 +33,7 @@
      * [Waarschuwingen](manual/miscellaneous/warnings.md)
      * [Statussen van plannen](manual/miscellaneous/idea-statuses.md)
      * [Authenticatie methodes](manual/miscellaneous/authentication-methods.md)
+     * [Rollen](manual/miscellaneous/roles.md)
      * [URL's](manual/miscellaneous/urls.md)
      * [Testen](manual/miscellaneous/testing.md)
 
