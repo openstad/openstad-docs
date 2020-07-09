@@ -6,6 +6,8 @@ _Status: WIP_
 
 Dit proces bestaat uit verschillende fases. De twee belangrijkste zijn de indienfase en de stemfase. Maar ook daartussen is er een hoop werk te doen. In deze tussenfase wordt bijvoorbeeld de haalbaarheidstoets van de ingediende plannen gedaan, zodat er in de stemfase enkel plannen aan bewoners voorgelegd worden die ook daadwerkelijk uitgevoerd kunnen worden, en dat het bekend is hoeveel budget er voor de uitvoering van de plannen nodig is.
 
+Voorbeelden van het 'participatief begroten'-proces zijn te vinden onder de 'Use cases' op OpenStad.org. [TODO link naar het use cases overzicht toevoegen, en mogelijk hieronder een opsomming van specifieke use cases]
+
 ## Indienfase
 Tijdens de indienfase is het voor bewoners mogelijk om plannen te uploaden voor hun buurt in te dienen. Op deze plannen kan vervolgens gestemd worden zodat de gemeente weet hoeveel draagvlak er voor een plan is, voordat er tijd en geld gestoken wordt in een haalbaarheidsonderzoek. Ook kunnen andere bewoners reacties plaatsen bij een plan.
 
