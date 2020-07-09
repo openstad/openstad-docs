@@ -2,6 +2,8 @@
 
 _Status: WIP_
 
+[TODO mogelijk opsplitsen in verschillende pagina's, één per fase]
+
 [TODO er is vaak budget beschikbaar, waarvan de gemeente wil dat de bewoners bepalen wat hiermee gebeurt. ]
 
 Dit proces bestaat uit verschillende fases. De twee belangrijkste zijn de indienfase en de stemfase. Maar ook daartussen is er een hoop werk te doen. In deze tussenfase wordt bijvoorbeeld de haalbaarheidstoets van de ingediende plannen gedaan, zodat er in de stemfase enkel plannen aan bewoners voorgelegd worden die ook daadwerkelijk uitgevoerd kunnen worden, en dat het bekend is hoeveel budget er voor de uitvoering van de plannen nodig is.
@@ -11,6 +13,8 @@ Voorbeelden van het 'participatief begroten'-proces zijn te vinden onder de 'Use
 ## Indienfase
 Tijdens de indienfase is het voor bewoners mogelijk om plannen te uploaden voor hun buurt in te dienen. Op deze plannen kan vervolgens gestemd worden zodat de gemeente weet hoeveel draagvlak er voor een plan is, voordat er tijd en geld gestoken wordt in een haalbaarheidsonderzoek. Ook kunnen andere bewoners reacties plaatsen bij een plan.
 
+### Voorbereiding indienfase
+
 Maak in het admin-panel [TODO link toevoegen] een nieuwe lege website aan en volg onderstaande how-to's om deze te vullen, of begin te werken vanuit een website waar de basisfunctionaliteit al werkt: [TODO toevoegen hoe en wat].
 
 Voor het begin van deze fase zijn de volgende how-to's relevant:
@@ -19,8 +23,12 @@ Voor het begin van deze fase zijn de volgende how-to's relevant:
 * [Reacties en argumenten](../manual/how-tos/arguments.md) - het is projectafhankelijk of er algemene reacties, of een scheiding tussen voor- en tegen-argumenten gewenst is.
 * [Likes verzamelen](../manual/how-tos/like-ideas.md) - stel een stemdrempel in, en bekijk de herkomst van de likes om mogelijke fraude op te sporen. Lees hier ook hoe de mogelijkheid om plannen te liken uitgeschakeld kan worden.
 
+### Gedurende de indienfase
+
 Tijdens de indienfase zijn de volgende how-to's relevant:
 * [Moderatie](../manual/how-tos/moderation.md)
+
+### Afronding van de indienfase
 
 Het sluiten van de indienfase bestaat uit twee stappen. Om de bewoners die op de laatste dag hun plan hebben ingediend nog de mogelijkheid te geven om voldoende likes te verzamelen, kan de mogelijkheid om plannen in te dienen eerder gesloten worden dan de mogelijkheid om likes te geven (met bijvoorbeeld een week ertussen).
 
@@ -44,12 +52,22 @@ Voor deze fase zijn de volgende how-to's relevant:
 ## Stemfase
 Voor deze fase wordt aan de achterkant een nieuwe website gebruikt. Dit heeft als voordeel dat de originele ingediende plannen van bewoners bewaard blijven en als archief kunnen dienen, terwijl op de stemsite alleen de plannen geplaatst worden die door zijn naar de stemfase. Deze plannen kunnen hier ook een aangepaste (kortere) beschrijving krijgen volgens een format dat bij alle plannen overeenkomt, zodat ze goed te vergelijken zijn. Een ander voordeel is dat deze website opgezet, gevuld en getest kan worden, terwijl voor bezoekers de indienwebsite nog zichtbaar is.
 
+### Voorbereiding stemfase
+
 Maak voor deze fase dus een nieuwe website aan in het admin-panel, of begin te werken vanuit een website waar de basisfunctionaliteit al werkt: [TODO toevoegen hoe en wat].
 
 Voor deze fase zijn de volgende how-to's relevant:
 * [Plannen exporteren en importeren](manual/how-tos/importing-plans.md) - importeer de verwerkte plannen uit de indienfase.
 * [Stemmen](manual/how-tos/voting.md) - stel de stemmodule naar wens in.
 
-Het afsluiten van de stemmogelijkheid gaat als volgt:
-1. Pas de pagina's van de website aan, zodat het voor bezoekers duidelijk is dat er niet meer gestemd kan worden.
-2. Sluit het stemmen in het admin-panel, zodat dit ook aan de achterkant geblokkeerd is. [TODO link en meer uitleg toevoegen]
+### Gedurende de stemfase
+
+Tijdens de stemfase zijn de volgende how-to's relevant:
+* [Stemmen](manual/how-tos/voting.md) - bekijk de voortgang van de uitgebrachte stemmen.
+
+### Afronding stemfase
+
+Bij de afronding van de stemfase zijn de volgende how-to's relevant:
+* [Stemmen](manual/how-tos/voting.md) - lees hoe je de stemfunctionaliteit kunt sluiten.
+
+Vergeet niet de content van de pagina's aan te passen om bezoekers van de site duidelijk te maken dat de stemfase gesloten is.

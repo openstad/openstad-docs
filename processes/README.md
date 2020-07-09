@@ -3,8 +3,8 @@ Overzicht van de verschillende participatie processen die we ondersteunen.
 Hier worden de belangrijkste stappen/onderdelen/beweegredenen voor de processen uiteengezet, en er wordt vanuit hier verwezen naar de verschillende [how-to's](../manual/how-tos/) waar deze processen op leunen.
 
 ## Processen
-* [Wedstrijd](contest.md) - Laat bewoners bijvoorbeeld een ontwerp, idee, foto of naam indienen. Uit de inzendingen wordt vervolgens één of meerdere winnaars gekozen. Het kiezen van de winnaars kan bijvoorbeeld gebeuren door medebewoners te laten stemmen, en/of door een juryprijs uit te reiken.
 * [Voorkeurspeiling](poll.md) - Laat bewoners kiezen uit een beperkt aantal voorstellen, bijvoorbeeld tussen verschillende ontwerpen voor de herinrichting van een straat.
+* [Wedstrijd](contest.md) - Laat bewoners bijvoorbeeld een ontwerp, idee, foto of naam indienen. Uit de inzendingen wordt vervolgens één of meerdere winnaars gekozen. Het kiezen van de winnaars kan bijvoorbeeld gebeuren door medebewoners te laten stemmen, en/of door een juryprijs uit te reiken.
 * [Participatief begroten](participatory-budgeting.md) - Een proces dat uit meerdere fases bestaat, waarbij bewoners plannen kunnen indienen, en later in het proces zelf stemmen welke plannen uitgevoerd worden.
 
 Er wordt hard gewerkt om bovenstaande lijst uit te breiden met nieuwe vormen van online bewonersparticipatie. De volgende processen zijn momenteel in ontwikkeling:
