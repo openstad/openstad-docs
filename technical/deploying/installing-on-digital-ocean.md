@@ -1,13 +1,15 @@
 > :warning: **This is a work in progress**: Not finished yet
 
 Prerequisites (version matter!):
-- Kubectl (1 version within digital ocean cluster version)
-- Helm (version 3)
+- Kubectl (1 version within digital ocean cluster version). See [Kubectl installation.](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+- Helm (version 3). See https://helm.sh/docs/intro/install/
 
 Main commands are kubectl and helm.
 
+
 ## 1 Create a Kubernetes Cluster in Digital Ocean
-Select at least 6 nodes for a dev cluster. This will take a few minutes.
+Select at least 6 nodes for a development cluster. Creating will take a  few minutes.
+
 
 ## 2 Add Config of cluster to your local machine
 Once your cluster installed you can download the config file and set it to your kubectl config
@@ -19,7 +21,9 @@ https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-mul
 
 ## 3 Install nginx-ingress
 Most cloud providers come with a load balancer for ingress. For digital ocean this needs to be installed.
-Easiest way to do this is during the setup in digital ocean, it will take a few minutes to install the cluster, and then in one of the next steps
+Easiest way to do this is during the setup in digital ocean, it will take a few minutes to install the cluster, and then in one of the next steps.
+
+
 
 It's also possible to install it yourself with helm:
 
@@ -87,7 +91,7 @@ host:
 
 - check which containers are set, *latest one currently is development (and devel for API)*, but be aware these are auto pushed on git updates, so it might break every know and then for now. Around mid august 2020 we plan to move everything to the master branch and the latest tag
 
-- Preferrably set mail server for sending emails, but not necessary per se.
+- Preferrably set mail server for sending emails, but will work without on first install, so can be added later.
 ```
 ### Mail server secretes
 mail:
@@ -107,13 +111,13 @@ mail:
     adminEmailFrom:
     password:
     requireSsl:
-    ```
+```
 
 - Set the admin login token
 
 ## Helm dependency update
 Check the custom-values which dependencies you want enabled (mongodb, cert-manager and mysql).
-Easiest is to leave all on. Then run the following command to install
+Easiest is to leave all on. Then run the following command to install the dependencies:
 
 ```
 helm dependency update
@@ -122,6 +126,8 @@ helm dependency update
 
 ## First installation
 On first install keep certissuer to false; we are looking at a way to make this prettier in the future.
+
+In custom-values.yml:
 
 ```
 ## Settings for Cert-Manager/Cluster issuer
