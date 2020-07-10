@@ -20,13 +20,18 @@ Every repository has a travis.yml file that would work automatically if a travis
 
 For instance the frontend has a .travis.yml file and de docker_publish script: https://github.com/Amsterdam/openstad-frontend/tree/development
 
-The publish script cert environment variables are expected and can be saved in repository settings in the Travis dashboard"
+The publish script cert environment variables, these can be saved in repository settings in the Travis dashboard:
+- DOCKER_USER
+- DOCKER_PASSWORD
 
 
 ## Auto deploy to cluster
 It's possible, we do it for staging and release, to autodeploy to a Kubernetes cluster. See the docker_deploy file in the repository for this.
 
-For deploy to work, the above  varaible
+For deploy to work, the above variables are necessary and needed to add the kubernetes config file as a variable:
+- KUBE_CONFIG
+
+Can be generated like this:
 
 
 ## Example travis file

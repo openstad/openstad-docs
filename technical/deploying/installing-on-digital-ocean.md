@@ -89,8 +89,19 @@ host:
 
 - Set basic auth user and password (used for Admin panel)
 
-- check which containers are set, *latest one currently is development (and devel for API)*, but be aware these are auto pushed on git updates, so it might break every know and then for now. Around mid august 2020 we plan to move everything to the master branch and the latest tag
+    ### Overwrites for auth db
+    auth:
+      dbName: auth
+      credentials:
+        clientId:
+        clientSecret:
+        fixedUserId:
+        fixedToken:
+        firstLoginToken:
+        adminClientId:
+        adminClientSecret:
 
+- check which containers are set, *latest one currently is development (and devel for API)*, but be aware these are auto pushed on git updates, so it might break every know and then for now. Around mid august 2020 we plan to move everything to the master branch and the latest tag
 - Preferrably set mail server for sending emails, but will work without on first install, so can be added later.
 ```
 ### Mail server secretes
