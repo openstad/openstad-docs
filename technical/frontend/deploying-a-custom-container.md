@@ -18,16 +18,8 @@ helm upgrade  -f custom-values.yaml openstad . -n openstad
 ## Push your image automatically to dockerhub
 Every repository has a travis.yml file that would work automatically if a travis account was made  dockerhub images are pushed. Both Dockerhub and Travis are free for open source project.
 
-For instance the frontend has a .travis.yml file and de docker_publish script: https://github.com/Amsterdam/openstad-frontend/tree/development
+For instance: https://github.com/Amsterdam/openstad-frontend
 
-The publish script expext 
-
-Following variables are expected and can be saved to the
 
 ## Auto deploy to cluster
-It's possible, we do it for staging and release, to autodeploy to a Kubernetes cluster. See the docker_deploy file in te repository for this.
-
-Som
-
-
-## Example travis file
+It's possible, we do it for staging and release, to autodeploy to a Kubernetes cluster.
