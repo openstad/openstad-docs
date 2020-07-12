@@ -6,12 +6,14 @@ Prerequisites (version matter!):
 
 Main commands are kubectl and helm.
 
+## Installation steps
 
-## 1 Create a Kubernetes Cluster in Digital Ocean
-Select at least 6 nodes for a development cluster. Creating will take a  few minutes.
+###1. Creat a Kubernetes Cluster in Digital Ocean
 
+Select at least 3 nodes for a development cluster. Creating will take a  few minutes.
 
-## 2 Add Config of cluster to your local machine
+### 2. Add Config of cluster to your local machine
+
 Once your cluster installed you can download the config file and set it to your kubectl config
 If you have no cluster yet you can set the config file to the default cluster:
 $HOME/.kube/config
@@ -19,19 +21,24 @@ $HOME/.kube/config
 Learn how to set up multiple config files here:
 https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/#explore-the-home-kube-directory
 
-## 3 Install nginx-ingress
-Most cloud providers come with a load balancer for ingress. For digital ocean this needs to be installed.
-Easiest way to do this is during the setup in digital ocean, it will take a few minutes to install the cluster, and then in one of the next steps.
+You can also do this with digital ocean specific tool doctl:
 
+https://github.com/digitalocean/doctl
 
+### 3. Install Nginx-Ingress
 
-It's also possible to install it yourself with helm:
+Most cloud providers come with a load balancer for ingress. 
+
+Easiest it to install it yourself with helm:
 
 ```
-helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true
+helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true --set controller.scope.namespace=openstad
 ```
 
-## 4 Set your DNS
+
+
+### 4. Set your DNS
+
 Once nginx-ingress is installed DigitalOcean gives you a public IP. This is visible in your dashboard.
 
 You can also find your IP in via your command line.
@@ -49,7 +56,7 @@ nginx-ingress-default-backend   ClusterIP      10.999.223.138   <none>          
 ```
 
 
-Set the DNS records for following domains
+Set the DNS records for following domains. 
 
 - www.*domainname.com*
 - www.api.*domainname.com*
@@ -66,12 +73,21 @@ If you have no domain, an alternative is xip.io which sends certain domain names
 
 
 
-## Configure your custom values
+###5. Clone the Kubernetes Repository
+
+Find the Kubernetes repository at https://github.com/Amsterdam/openstad-kubernetes. Clone it and go into the k8s/openstad folder. All commands and file below are present in this subdirectory.
+
+Warning: use the **development** branch for now! (we expect to move first version to master in august 2020)
+
+
+
+###6. Configure your custom values
+
 Go to k8s/openstad directory.
 
-Copy values.yaml and configure values. Create a custom-values.yaml and set the correct env values.
+Copy values.yaml and configure values. Create a custom-values.yaml and set the correct  values"
 
-- Set correct base domain
+- Set correct base domain and set publicIp of load balancer, used for only requesting a let's encrypt certificate for hostnames if their dns is set correctly
 ```
 ## Settings for DNS
 host:
@@ -80,14 +96,11 @@ host:
   ### to this url
   ### e.g. subdomain.example.com
   base: amsterdam.openstad.org
+  publicIp: 
 ```
 
-- update custom mysql password
-
-- Set the auth credentials, the loginToken will allow you to login with the token into admin panel en first website.
-
-
-- Set basic auth user and password (used for Admin panel)
+- update custom mysql password,
+- Set the auth credentials, the firstLTokenLogin will allow you to login with the token into admin panel en first website. You can leave the rest empty, will be auto generated
 
     ### Overwrites for auth db
     auth:
@@ -101,7 +114,14 @@ host:
         adminClientId:
         adminClientSecret:
 
-- check which containers are set, *latest one currently is development (and devel for API)*, but be aware these are auto pushed on git updates, so it might break every know and then for now. Around mid august 2020 we plan to move everything to the master branch and the latest tag
+- Set basic auth user and password (used for Admin panel)
+
+     basicAuth:
+        user:
+        password:
+
+
+- check which containers are set, *latest one currently is development (and devel for API)*, but be aware these are auto pushed on git updates, so it might break every know and then for now. Around mid august 2020 we plan to move everything to the master branch and the latest tag and have a more stable application
 - Preferrably set mail server for sending emails, but will work without on first install, so can be added later.
 ```
 ### Mail server secretes
@@ -124,9 +144,10 @@ mail:
     requireSsl:
 ```
 
-- Set the admin login token
 
-## Helm dependency update
+
+### 7. Helm dependency update
+
 Check the custom-values which dependencies you want enabled (mongodb, cert-manager and mysql).
 Easiest is to leave all on. Then run the following command to install the dependencies:
 
@@ -135,7 +156,9 @@ helm dependency update
 ```
 
 
-## First installation
+
+### 8. First installation
+
 On first install keep certissuer to false; we are looking at a way to make this prettier in the future.
 
 In custom-values.yml:
@@ -144,14 +167,17 @@ In custom-values.yml:
 ## Settings for Cert-Manager/Cluster issuer
 clusterIssuer:
   enabled: false  # Whether this issuer is created
-
+	
 ```
 
 ```
 helm install --values custom-values.yaml --replace openstad . --namespace=openstad --create-namespace
 ```
 
-## Upgrade for SSL to work
+
+
+### 9. Upgrade for SSL to work
+
 Wait a few minutes till all pods are running then enable certificates.
 
 This way you can you check if the pods are all running
@@ -159,13 +185,13 @@ This way you can you check if the pods are all running
 kubectl get pods -n openstad
 ```
 
-If all are running enable clusterIssuer in custom-values.
+If all are running enable clusterIssuer in custom-values. Set useProdIssuer to true to generate production SSL certificates, otherwise it will use the staging certificates of Let's encrypt.
 
 ```
 ## Settings for Cert-Manager/Cluster issuer
 clusterIssuer:
   enabled: true  # Whether this issuer is created
-
+  useProdIssuer: true
 ```
 Run upgrade command:
 
@@ -173,15 +199,13 @@ Run upgrade command:
 helm upgrade  -f custom-values.yaml openstad . -n openstad
 ```
 
-## What to expect:
-
-Domains configured should now run with standard CMS.
-
 
 
 ## What to expect
 
-When everything went according to plan the base domain (for example www.amsterdam.openstad.org) should show a default empty openstad site. If you go to /oauth/login you should see.
+When everything went according to plan the base domain (for example www.amsterdam.openstad.org) should show a default empty openstad site. If you go to /oauth/login you should should get to a login screen where you can login with the token you set in the installations process. At the www.admin.openstad.org. 
+
+
 
 ## Some other commands
 

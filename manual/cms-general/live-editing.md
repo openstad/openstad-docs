@@ -5,7 +5,7 @@ Het CMS werkt met het zogenaamde _live in-page editing_. Dat betekent dat als we
 <video autoplay loop width="100%">
 
     <source src="/video/live-inpage-editing.mp4" type="video/mp4">
-
+    
     Sorry, your browser doesn't support embedded videos.
 
 </video>

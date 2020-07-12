@@ -85,3 +85,4 @@
   * [Admin panel](technical/admin/README.md)
   * [Image server](technical/image/README.md)
   * [Contributing & versioning](technical/contributing.md)
+  * [Roadmap](technical/roadmap.md)
