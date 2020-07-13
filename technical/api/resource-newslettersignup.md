@@ -1,22 +1,17 @@
 # Newsletter Signup
 
-Het aanmelden voor niewsbrieven staat alleen open als dat in de siteconfig is opgegeven. De minimale site config is:
+The newsletter signup allows for signing up people for a newsletter. No sending of e-mail of managing subscriber status is done after signing up.
 ```
 {
   "config": {
     "newslettersignup": {
-      "isActive": true,
-      "confirmationEmail": {
-        "url": "URL/[[token]]"
-      }
+      "isActive": true
     }
   }
 }
 ```
 
-Optionele extra params zijn `autoConfirm` (default false), `confirmationEmail.from`, `confirmationEmail.subject` en `confirmationEmail.template`. Template is een nunjucksTemplate; zie [Email](/doc/email) voor meer informatie.
-
-Ik ga er vanuit dat je bevestigen en afmelden via de frontend doet, en dat daarvandaan een post request naar de API wordt gestuurd. Een directe link naar de API zou ook kunnen met een doorverwijzing naar de frontend; als je dat wilt moet je het even zeggen en bouw ik daar extra endpoints voor.
+## Endpoint
 
 `GET /api/site/:SITE_ID/newslettersignup`
 List all newsletter signups for a site
@@ -26,6 +21,14 @@ Alleen beschikbaar voor admins
 
 `POST /api/site/:SITE_ID/newslettersignup`
 Create a newslettersignup
+
+## Signup confirm (beta)
+
+There is the possibility to send an e-mail and let the user confirm the signup. This is however in Beta and being currently used and tested.
+
+WIP: Dutch will be corrected/
+
+Optionele extra params zijn `autoConfirm` (default false), `confirmationEmail.from`, `confirmationEmail.subject` en `confirmationEmail.template`. Template is een nunjucksTemplate; zie [Email](/doc/email) voor meer informatie.
 
 Deze staat open voor iedereen. Als je een ingelogde gebruiker bent dan wordt je aanmelding ook direct geconcirmed. Als je niet bent ingelogd dan wordt er een email verstuurd waarmee je moet confirmen.
 

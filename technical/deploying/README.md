@@ -2,6 +2,6 @@
 
 We advice deploying the openstad servers with Kubernetes. We have Helm charts ready for an easy deployment.
 
-For more info check background of Kubernetes
+For more an introduction to our setup checkout the [Kubernetes](/technical/deploying/kubernetes.md)
 
-For specific instructions checkout Installing on Digital Ocean
+For specific instructions checkout [Installing on Digital Ocean](/technical/installing-on-digital-ocean.md), for other cloud providers it will be similar.

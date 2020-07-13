@@ -1,28 +1,19 @@
 # Tags
 
 ## Inhoud
-[Beschrijving](#beschrijving)
+[Description](#description)
 [Endpoints](#endpoints)
 [Ideas](#ideas)
-[ToDo](#todo)
 
-## Beschrijving
+## Description
 
-Tags zijn objecten om ideas (en straks articles) te kunnen voorzien van een label. Ze hebben alleen een name field.
-
-Voor het beheren van tags zijn er standaard CRUD endpoints.
+Tags are a form categorising with
 
 In ideas zijn tags terug gebracht tot alleen de name, zowel in de resultaten als in de create/update van het idee.
 
-```
-{ "tags": ["Rode fietsen", "Gele auto's"] }
-```
-
-Beheren van tags kan alleen admin. Toevoegen aan ideeen kan iedereen die een idee kan bewerken.
+Administrating can be done by admin. Adding to ideas is allowed by the author of the idea and moderator. 
 
 ## Endpoints
-
-Standaard CRUD
 
 #### List all tags
 ```
@@ -52,7 +43,7 @@ PUT :HOSTNAME/api/site/:SITE_ID/tag/:TAG_ID
 }
 ```
 
-#### Delete an tag
+#### Delete a tag
 ```
 DELETE :HOSTNAME/api/site/:SITE_ID/tag/:TAG_ID
 ```
@@ -86,12 +77,9 @@ PUT :HOSTNAME/api/site/:SITE_ID/idea/:IDEA_ID
 
 ```
 
-Zoeken van ideas op tags doe je ook met een query parameter:
+Getting ideas based upon tags is done with.
+
 ```
-GET :HOSTNAME/api/site/:SITE_ID/idea?tags[]=Rode%20fietsen&tags[]=Gele%20auto's
+GET :HOSTNAME/api/site/:SITE_ID/idea?tags[]=1&tags[]=2
 ```
 
-## TODO
-- na merge van hotfix/003 moet deze functionaliteit vermoedelijk ook naar articles
-- tags is eeen OR; ik zie zo geen toepassing voor een AND, maar wellicht moet er dus nog een komen
-- ik kan me nog voorstellen dat je tags in tags wilt kunnen hangen, dat zou dan ook een todo zijn

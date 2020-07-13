@@ -22,9 +22,9 @@ update one idea
 `DELETE /api/site/:SITE_ID/idea/:IDEA_ID`
 delete one idea
 
-GET request zijn public, POST is alleen toegankelijk voor admin, de anderen alleen voor admin en de eigenaar
+GET request are public, POST are only accessible to owners or moderators.
 
-Je kunt aan de GETs query parameters meegeven. Die werken als scopes voor Sequelize; dat komt uit de bestaande app. Bestaande scopes zijn:
+To include more data there are a few get parameters available: 
 
 `selectRunning`
 `includeArguments`
@@ -35,9 +35,9 @@ Je kunt aan de GETs query parameters meegeven. Die werken als scopes voor Sequel
 `includeUserVote`
 
 ## extraData
-ideas hebben een extraData veld dat een JSON object bevat. De toegestane waarden daarin worden gedefinieerd in de config van de API van de site.
+Ideas contain an extraData field for dynamic data that changes per site. The allowed values are configurable per site (it's own rest object)
 
-Ondersteunde veldtypen:
+Supported field types:
 `boolean`
 `int`
 `string`
@@ -51,13 +51,11 @@ Het verwijderen van velden doe je door ze mee te sturen met de waarde `null`.
 
 #### extraDataMustBeDefined
 
-Teneinde hier niet direct een breaking change van te maken kent de siteconfig een (tijdelijk en dus deprecated) veld extraDataMustBeDefined. De default daarvan is nu false.
+In old versions ist wasn't required to define the extraData values in the site configuration, therefore by default the check is not made at the moment. However extraDataMustBeDefined: true forces the validation, and will soon be the default.
 
-Die zou voor nieuwe sites naar true moeten worden gezet. Voor bestaande eigenlijk ook. En als we dan denken dat het overal goed staat zoyu de default waarde van dit veld naaar true moeten, of nog beter: het zou er helemaal uitgehaald moeten worden.
+#### Example configuration
 
-#### Voorbeelden
 
-Voorbeeld definitie:
 ```
   "config": {
     "ideas": {
@@ -96,7 +94,7 @@ Voorbeeld definitie:
   }
 ```
 
-Dat zou dan deze voorbeeld data ondersteunen:
+Example data:
 ```
   "extraData": {
     "zomaar": {
@@ -110,7 +108,3 @@ Dat zou dan deze voorbeeld data ondersteunen:
   }
 ```
 
-
-## TODO
-- Wat hier nog niet is geimplementeerd is een oplossing voor images; je krijgt nu terug wat er in de DB zit.
-- Ik denk dat er een overkoepelend idea zou moeten zijn, maar even overleggen

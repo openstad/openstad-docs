@@ -15,15 +15,13 @@ update one site
 `DELETE /api/site/:SITE_ID`
 delete one site
 
-GET request zijn public, de anderen alleen toegankelijk voor admin
+GET request are public, certain config data is excluded publically. The post, put and delete are all admin only.
 
-#### config
+#### Site config
 
-Sites hebben een veld config. Dat is een json veld.
+One of the crucial aspects of the Site is it's config option, it is saved in a JSON column. The site configuration for how site should handle voting, ideas, argumentes, domains, what Database CMS uses, if Basic Auth is turned and and more.
 
-Uiteindelijk zal de API alleen config vars opslaan die zijn gedefineerd. Voor nu accpeteert hij alles om ontwikkelwerk eenvoudiger te maken.
-
-De gedefinieerde config wordt nog wel gebruikt voor defaults etc. Die ziet er nu zo uit (maar dat is volgende week vast weer anders):
+This is the current default configuration:
 
 ```
 {
@@ -279,8 +277,3 @@ De gedefinieerde config wordt nog wel gebruikt voor defaults etc. Die ziet er nu
 }
 ```
 
-#### TODO
-- config.votes.userRole doet nog niets. Je moet nu member zijn om te mogen stemmen. Dat zal ook anomniem moeten kunnen, waarbij hij dan automatisch een gebruiker aanmaakt (ook in mijnopenstad). Aanpassen rolePlay daarop.
-- config.votes.maxChoices doet nog niets.
-- config.votes.mustConfirm doet nog niets.
-- er is nu alleen db validatie
