@@ -13,3 +13,6 @@ Indienen mogelijk maken voor bewoners:
 Indienen als moderator:
 * Admin panel
 * Formulier (verwijzen naar bewoner-beschrijving, formulier mogelijk unpublished laten)
+
+
+Waarschuwen: voorzichtig omgaan met het vragen van gevoelige informatie, sommige gegevens zijn publiekelijk zichtbaar (exacte waarschuwing dubbelchecken met devs)
