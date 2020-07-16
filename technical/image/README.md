@@ -1,7 +1,8 @@
+# Image server
 
-# An Express Image Server with Node.js: for uploading and resizing images
+The image server is a simple nodejs express server that allows images to be uploaded with Multer and resizes the based on url scheme, resizing is done with the [node-steam](https://github.com/asilvas/node-image-steam#throttle-options) library.
+
 See: https://github.com/Amsterdam/openstad-image-server
-A simple express server that allows images to be uploaded with Multer and resizes the based on url scheme, resizing is done with the [node-steam](https://github.com/asilvas/node-image-steam#throttle-options) library.
 
 Http-bearer is used fo validating requests so only registered clients can upload images.
 
@@ -69,10 +70,10 @@ npm run start
 
 
 ## Clients
-For every site create a row in the MySQL clients table. Generate a random token that's safe. Currently there is no interface for creating so create it command line or through an mysql interface like sequelpro or phpmyadmin.
+For every site create a row in the MySQL clients table. Generate a random token that's safe. Currently there is no interface for creating so create it command line or through an mysql interface like sequelpro or phpmyadmin. The seed will generate one if the ENV values is
 
 ## Uploading an image
-Example with node.js, using node-fetch & form-data. Notice dotenv is used for API values. Pass the access_token that you've generated for the client. (For security make sure it's over HTTPS)
+Example with node.js, using node-fetch & form-data.  Pass the access_token that you've generated for the client, can be in url or as header "Bearer: ${token}" make sure it's over HTTPS.
 
 ```
 const FormData = require('form-data');

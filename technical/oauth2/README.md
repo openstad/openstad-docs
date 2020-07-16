@@ -1,7 +1,11 @@
 Authorization Server
 ==================
 
-# An OAuth2 Server with Node.js
+The auth server is a node server that works in the oAuth2 protocol. It currently allows for validating users through a unique code (mostly used for voting, often send by letter) and e-mail. There is also an option to allow users to login through SMS, supported by KPN.
+
+
+
+
 
 ## Prerequisites
  - [Git](https://git-scm.com/)

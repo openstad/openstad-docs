@@ -40,8 +40,8 @@ There are a few settings in the databases that need to be set correctly for it a
 to work together. This works in combination with above .env values.
 Any changes in .env values after running the seeds might require database changes.
 
+1.1 Create the api site entries (runs both basic migrations and seeds.). This seed run will empty the tables, so don't use once running.
 
-1. Create the api site entries (runs both basic migrations and seeds.). This seed run will empty the tables, so don't use once running.
 ```
 docker-compose exec api node reset.js
 ```

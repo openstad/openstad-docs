@@ -11,11 +11,13 @@ The Frontend can manage multiple sites, it automatically creates ApostropheCMS e
 
 1.1 A standard request comes into the frontend, then the frontend server checks if the domain is known in it's memory.
 
-2.1 If yes it makes a call to the API to see if user is logged in and then serves the request domain and page. 2.2 If no  then it will make a call to the API to see if the domain exists in the application.
+2.1 If yes it makes a call to the API to see if user is logged in and then serves the request domain and page. 
+
+2.2 If no  then it will make a call to the API to see if the domain exists in the application.
 
 3.1 If no configuration for that domain is found a 404 page is served.
 
-3.3 If the domain is known the Frontend server gets the configuration returned for the site, checks if the mongob database exists and serves the site.
+3.2 If the domain is known the Frontend server gets the configuration returned for the site, checks if the mongob database exists and serves the site.
 
 
 
@@ -28,17 +30,15 @@ On top of the core of ApostropheCMS we have integrated and developed the Opensta
 
 The frontend CMS is developed in such a way that it can run multiple sites on one server.
 
-Installation instructions are found in the readme. MongoDB & Node.js are required.
+Installation instructions are found in the readme. MongoDB & Node.js are required. ApostropheCMS uses MongoDB for saving it's page data.
 
 **MongoDB version**: We use 4.0 as a latest version for mongodb because they have dropped support for the CopyDB command, which is a often used feature by the admin panel when copying and creating site. MongoDB recommends to write your own version
-
-ApostropheCMS uses MongoDB.
 
 https://github.com/Amsterdam/openstad-frontend
 
 
 ### Openstad API
-The Openstad API is a REST Api that return's JSON.
+The Openstad API is a REST Api that returns JSON.
 
 When the Frontend server gets a visitor it queries the API to get the config needed for the domain visited. Therefore the frontend server can’t run without the API server.
 
@@ -50,7 +50,7 @@ https://github.com/Amsterdam/openstad-api
 
 
 ### OAuth Server
-The OAuth server is required for authenticating & voting users allowing them to submit & manage ideas, arguments & vote.
+The OAuth server is required for authenticating & voting users. Oauth server has a role and right system per client. One frontend site can have multiple clients per site. The auth server currently support 3 
 
 See the readme for installation.
 

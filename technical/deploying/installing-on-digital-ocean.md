@@ -176,9 +176,11 @@ helm install --values custom-values.yaml --replace openstad . --namespace=openst
 
 
 
+Will take a few minutes to start all the pods and then run the post install database migrations
+
 ### 9. Upgrade for SSL to work
 
-Wait a few minutes till all pods are running then enable certificates.
+When installations is done and all pods are running you can turn on the clusterIssuer to auto generate certificates, make sure DNS works so cert-manager won't get temporarily blocked by Let's encrypt.
 
 This way you can you check if the pods are all running
 ```
@@ -201,9 +203,51 @@ helm upgrade  -f custom-values.yaml openstad . -n openstad
 
 
 
+## 10. Database creation & seeds
+
+At the moment table creation and seeding has to be done manual. There are some automatic jobs being developed to automate this proces, but for now  easiest and most stable is to run the migrations directly in the pods. (get the pod names by running kubectl get pods -n openstad)
+
+1.1 Create the api site entries (runs both basic migrations and seeds.). This seed run will empty the tables, so don't use once running.
+
+```
+kubectl exec -n openstad -it [api-podname] node reset.js
+```
+
+2.1 Create the tables for the Auth server
+
+```
+kubectl exec -n openstad -it [auth-podname] knex migrate:latest
+```
+
+2.2 Seed the table for the Auth server. . This seed run will empty the tables, so don't use once running.
+
+```
+kubectl exec -n openstad -it [auth-podname] knex seed:run
+```
+
+3.1 Create the tables for the Image server
+
+```
+kubectl exec -n openstad -it [image-podname] knex migrate:latest
+```
+
+3.2 Seed the tables for the Image server. This seed run will empty the tables, so don't use once running.
+
+```
+kubectl exec -n openstad -it [image-podname] knex seed:run
+```
+
+
+
+
+
 ## What to expect
 
-When everything went according to plan the base domain (for example www.amsterdam.openstad.org) should show a default empty openstad site. If you go to /oauth/login you should should get to a login screen where you can login with the token you set in the installations process. At the www.admin.openstad.org. 
+When everything went according to plan the base domain (for example www.amsterdam.openstad.org) should show a default empty openstad site. 
+
+If you go to /oauth/login you should should get to a login screen where you can login with the token you set in the installations process. 
+
+The admin panel is found with admin in front of the base: www.admin.amsterdam.openstad.org. The basic auth password is set in your values file. If e-mail is working we recommend switch the auth settings for your admin panel to e-mail.
 
 
 
