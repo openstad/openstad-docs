@@ -5,6 +5,20 @@ The auth server is a node server that works in the oAuth2 protocol. It currently
 
 
 
+## User Roles
+
+There are 5 available user roles per client. Admin panel is it's own client. 
+
+If admin of admin panel has access to all data available in the panel.
+
+| Role      | Description                                                  |
+| --------- | ------------------------------------------------------------ |
+| Admin     | Full rights to all user data and site content of the specific site. |
+| Editor    | Full rights to all user data and site content of the specific site. |
+| Moderator | Full rights to all user data, no access to managing site content. |
+| Member    | Rights to it's own data and content                          |
+| Anonymous | No user data, for some application liking without logging in. |
+
 
 
 ## Prerequisites
@@ -77,6 +91,8 @@ knex seed:run
 
 #### 7. Login with token
 After generating the token the console outputs. If you miss this you can find this in the mysql table: unique_codes (should just be one row). This code will allow you to login with a unique token. After you will be asked. You can change the login options at the client screen.
+
+
 
 ## Integration with external sites
 
