@@ -265,7 +265,7 @@ kubectl logs openstad-auth-b884b985d-505ph -n openstad
 
 
 ```
-helm upgrade openstad . --namespace openstad --values c-values.yaml --kubeconfig=config.yaml
+helm upgrade openstad . --namespace openstad --values custom-values.yaml --kubeconfig=config.yaml
 ```
 
 ```
