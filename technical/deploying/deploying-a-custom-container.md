@@ -1,12 +1,16 @@
 # How to deploy a custom image?
-In case you might want to deploy your own docker image of on our more. Easiest way to do this is to deploy to a custom image to a public dockerhub. Currently the Helm files assume a public dockerhub repository.
+In case you might want to deploy your own docker image of on our more of the servers the easiest way to do this is to deploy to a custom image to a public dockerhub. Currently the Helm files assume a public dockerhub repository. If you want it be private an key for authenticating with Dockerhub, or another registry should be added.
 
-In values yaml overwrite the name of the sockets:
+
+
+Most likely the custom image will be a version of the Frontend. So for insance in your values yaml overwrite the name of the image:
 ```
-deploymentContainer:
-  name: api-container
-  # Docker image for this pod
-  image: dockerhubname/container:tag
+frontend:
+  # Deployment container is what is eventually run in the pod
+  deploymentContainer:
+    name: frontend
+    # Docker image for this pod
+    image: dockerhubname/imagename:tag
 ```
 
 Run upgrade command:
@@ -31,7 +35,9 @@ It's possible, we do it for staging and release, to autodeploy to a Kubernetes c
 For deploy to work, the above variables are necessary and needed to add the kubernetes config file as a variable:
 - KUBE_CONFIG
 
-Can be generated like this:
+This is the kubeconfig generated encoded to a base64 string. For instance can be generated like this:
+
+`cat ${HOME}/.kube/config | base64 | pbcopy`
 
 
-## Example travis file
+

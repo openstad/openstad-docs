@@ -23,9 +23,9 @@ update one article
 `DELETE /api/site/:SITE_ID/article/:ARTICLE_ID`
 delete one article
 
-GET request zijn public, POST is alleen toegankelijk voor admin, de anderen alleen voor admin en de eigenaar
+GET requests are public, POST only available for moderators and owners
 
-Je kunt aan de GETs query parameters meegeven. Die werken als scopes voor Sequelize; dat komt uit de bestaande app. Bestaande scopes zijn:
+Following GET parameters are available:
 
 `includePosterImage`
 `includeUser`

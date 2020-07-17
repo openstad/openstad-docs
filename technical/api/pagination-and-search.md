@@ -1,12 +1,10 @@
-# Pagineren en zoeken
+# Pagination and search
 
 ## Middleware
+All REST routes have pagination if the correct GET parameters are added to the URL on all GET list routes: Site, Idea, Article, Newslettersignup, Argument, Submission & Vote.
+The heavy lifting is done by express middleware.
 
-Zoeken en pagineren werkt beide als middleware. Informatie uitwisseling vindt plaats via het `req` object.
-
-Het is geimplementeerd op alle GET list routes: Site, Idea, Article, Newslettersignup, Argument, Submission en Vote.
-
-## Pagineren
+## Paginations parameters
 
 Als je een query param `page` meestuurt dan krijg je de resultaten gepagineerd terug. Optioneel kun je een parameter `pageSize` meesturen; die default naar 20.
 

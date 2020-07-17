@@ -1,17 +1,14 @@
 # Tags
 
-## Inhoud
 [Description](#description)
 [Endpoints](#endpoints)
 [Ideas](#ideas)
 
 ## Description
 
-Tags are a form categorising with
+Tags are a form categorising for ideas.
 
-In ideas zijn tags terug gebracht tot alleen de name, zowel in de resultaten als in de create/update van het idee.
-
-Administrating can be done by admin. Adding to ideas is allowed by the author of the idea and moderator. 
+Administrating can be done by moderators. Adding to ideas is allowed by the author of the idea and moderator. 
 
 ## Endpoints
 
@@ -48,24 +45,16 @@ PUT :HOSTNAME/api/site/:SITE_ID/tag/:TAG_ID
 DELETE :HOSTNAME/api/site/:SITE_ID/tag/:TAG_ID
 ```
 
+
+
 ## Ideas
 
-Op idee niveau worden tags alleen op name gebruikt.
-
-Gebruik includeTags om tags in het resultaat mee te nemen:
+In order to get the tags in an idea call
 ```
 GET :HOSTNAME/api/site/:SITE_ID/idea?includeTags=1
 ```
-Dat geeft dan als resultaat
-```
-{
-  ...idea fields
-  "tags": ["Rode fietsen", "Gele auto's"],
-  ...more idea fields
-}
-```
+When updating an Idea add te id's of the tags:
 
-Zo stuur je ze ook mee bij het creeren of updaten van een idea:
 ```
 PUT :HOSTNAME/api/site/:SITE_ID/idea/:IDEA_ID
 

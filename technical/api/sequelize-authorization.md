@@ -93,9 +93,9 @@ Will add `req.user` as the user to all instances in `req.results`. This will the
 Will call the toViewableJSON function on all insances in `req.results` with the content of `req.user` as the user.
 I think I will remove this middleware
 
-## Overrides
+## Overwrites
 
-The auth model allows for some functions to be overridden.
+The auth model allows for some functions to be overwritten.
 
 On a model new actions can be defined after which these can be used in the standard can functions. The example below allows for Argument.can('vote') to be used.
 

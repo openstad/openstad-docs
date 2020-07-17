@@ -1,14 +1,12 @@
 # Email
 
-De API stuurt verschillende typen email.
+The API sends a few type of e-mails.
 
-## Feedback bij het insturen van een plan
+## Confirmation after submitting an Idea
 
-Bij het aanmaken van een nieuwe inzending krijgt de inzender een email.
+After submitting an idea an automatic Thank you e-mail is send to the user that submitted it.
 
-#### Configuratie
-
-Configureren kan via de site.config
+By default this is a generic e-mail template. This can be customised per site in the config field of the Site model.
 
 ```
 {
@@ -21,15 +19,14 @@ Configureren kan via de site.config
         "from": "NAAM <EMAIL@ADDRESS>",
         "subject": "ONDERWERP",
         "inzendingPath": "/PATH/NAAR/INGEDIEND/PLAN/[[ideaId]]",
-        "template": "Beste {{user.fullName | default('indiener')}},<br/><br/>Bedankt voor je <a href=\"{{inzendingURL}}\">inzending</a>.<br/><br/>Groeten van het Project Team",
-        "attachments": [{ filename: "FILENAME1", "cid": "CID1" }, { filename: "FILENAME2", "cid": "CID2" }]
+        "template": "Beste {{user.fullName | default('indiener')}},<br/><br/>Bedankt voor je <a href=\"{{inzendingURL}}\">inzending</a>.<br/><br/>Groeten van het Project Team"
       }
     }
   }
 }
 ```
 
-Template is een nunjucks template - zie later in deze pagina. Daar zijn de volgende variabelen beschikbaar:
+Template is a nunjucks parameter
 
 **user**: het user object van de inzender
 **idea**: het idea object van de nieuwe inzending
@@ -43,13 +40,11 @@ Template is een nunjucks template - zie later in deze pagina. Daar zijn de volge
 Misschien een config optie om dit uit te zetten?
 Inline images?
 
-## Notificaties
+## Notifications to Moderators
 
-Notificaties worden verstuurd met elk nieuw plan, en periodiek met nieuwe reacties
+Notifications can be send to moderators for newly submitted ideas and updates to ideas.
 
-#### Configuratie
-
-Configureren kan via de site.config
+Also possible to configure per site:
 
 ```
 {
@@ -81,46 +76,6 @@ Subject configureerbaar?
 Aparte templates voor ideas en arguments?
 Inline images?
 
-## Bevestig een nieuwsbrief aanmedling
-
-Bij het inschrijven voor de nieuwsbrief krijgt de gebruiker een email ter bevestiging. Zie ook [Newsletter Signup](/doc/newslettersignup).
-
-#### Configuratie
-
-```
-{
-  "config": {
-    "newslettersignup": {
-      "isActive": true,
-      "confirmationEmail": {
-        "url": "URL/[[token]]",
-        "from": "NAAM <EMAIL@ADDRESS>",
-        "subject": "ONDERWERP",
-        "template": "Klik op de link om te bevestigen: {{confirmationUrl}}",
-        "attachments": [{ filename: "FILENAME1", "cid": "CID1" }, { filename: "FILENAME2", "cid": "CID2" }]
-      }
-    }
-  }
-}
-
-```
-
-Template is een nunjucks template - zie later in deze pagina. Daar zijn de volgende variabelen beschikbaar:
-
-**HOSTNAME**: site.config.cms.hostname
-**SITENAME**: site.title
-**URL**: site.config.cms.url
-**EMAIL**: from adres (email only),
-**confirmationUrl**: de url waarop iemand kan bevestigen
-
-Ik ga er vanuit dat je bevestigen en afmelden via de frontend doet, en dat daarvandaan een post request naar de API wordt gestuurd. Een directe link naar de API zou ook kunnen met een doorverwijzing naar de frontend; als je dat wilt moet je het even zeggen en bouw ik daar extra endpoints voor.
-
 ## Nunjucks templates
 
 De email wordt opgemaakt met nunjucks; alle beschreven vars kunnen dus met nujucks syntax worden geinclude.
-Daarnaast kun je naar attachments verwijzen. Die worden verondersteld in de dir INSTALLDIR/email/uploads/ te staan.
-
-**TODO**
-
-Er is nog geen upload mechanisme; momenteel moet je attachments met de hand in de uploads dir plaatsen.
-

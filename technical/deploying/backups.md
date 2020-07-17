@@ -4,9 +4,11 @@ There are a few backup possibilities.
 
 
 
-## Cloud provider backups
+## Cloud provider volumne backups
 
-Most cloud providers offer some form of backups through snapshots.
+Most cloud providers offer some form of backups through snapshots. Digital ocean allows to do snapshot the volumes, which is MongoDB, Mysql and Images. 
+
+More info on backups with Digital Ocean is found here: https://www.digitalocean.com/docs/kubernetes/how-to/snapshot-volumes/
 
 
 
@@ -18,7 +20,7 @@ These get activated if certain environment values are set in the Helm values, mo
 
 There is also a shell script to be found that can connect to a Openstack storage, although this one is not added to a cron and has to be added manually.  
 
-
+(We advise backupping at least Mysql and Mongodb also to an external provider.)
 
 
 
