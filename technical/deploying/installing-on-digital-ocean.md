@@ -2,7 +2,7 @@
 
 Prerequisites (version matter!):
 - Kubectl (1 version within digital ocean cluster version). See [Kubectl installation.](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-- Helm (version 3). See https://helm.sh/docs/intro/install/
+- Helm (version 3). See https://www.digitalocean.com/community/tutorials/how-to-install-software-on-kubernetes-clusters-with-the-helm-3-package-manager
 
 Main commands are kubectl and helm.
 
@@ -32,8 +32,12 @@ Most cloud providers come with a load balancer for ingress.
 Easiest it to install it yourself with helm:
 
 ```
-helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true --set controller.scope.namespace=openstad
+helm install nginx-ingress stable/nginx-ingress --set controller.publishService.enabled=true
 ```
+
+Make sure you already installed the stable repository during the installation of helm:
+
+`helm repo add stable https://kubernetes-charts.storage.googleapis.com`
 
 
 
@@ -174,9 +178,7 @@ clusterIssuer:
 helm install --values custom-values.yaml --replace openstad . --namespace=openstad --create-namespace
 ```
 
-
-
-Will take a few minutes to start all the pods and then run the post install database migrations
+Will take a few minutes up till 10 minutes to start all the pods and create all the databases.
 
 ### 9. Upgrade for SSL to work
 
@@ -203,41 +205,39 @@ helm upgrade  -f custom-values.yaml openstad . -n openstad
 
 
 
-## 10. Database creation & seeds
+## 10. Mysql Table creation & seeding
 
-At the moment table creation and seeding has to be done manual. There are some automatic jobs being developed to automate this proces, but for now  easiest and most stable is to run the migrations directly in the pods. (get the pod names by running kubectl get pods -n openstad)
+At the moment table creation and seeding has to be done manual. There are some automatic jobs being developed to automate this proces, but for now  easiest and most stable is to run the migrations directly in the pods. 
 
 1.1 Create the api site entries (runs both basic migrations and seeds.). This seed run will empty the tables, so don't use once running.
 
 ```
-kubectl exec -n openstad -it [api-podname] node reset.js
+kubectl exec -n openstad -it svc/openstad-api node reset.js
 ```
 
-2.1 Create the tables for the Auth server
+2.1 Create the tables for the Auth server, should already be done, but no problem running it twice.
 
 ```
-kubectl exec -n openstad -it [auth-podname] knex migrate:latest
+kubectl exec -n openstad -it svc/openstad-auth knex migrate:latest
 ```
 
-2.2 Seed the table for the Auth server. . This seed run will empty the tables, so don't use once running.
+2.2 Seed the table for the Auth server. This seed run will empty the tables, so don't use you have a working application
 
 ```
-kubectl exec -n openstad -it [auth-podname] knex seed:run
+kubectl exec -n openstad -it svc/openstad-auth knex seed:run
 ```
 
-3.1 Create the tables for the Image server
+3.1 Create the tables for the Image server.
 
 ```
-kubectl exec -n openstad -it [image-podname] knex migrate:latest
+kubectl exec -n openstad -it svc/openstad-image knex migrate:latest
 ```
 
 3.2 Seed the tables for the Image server. This seed run will empty the tables, so don't use once running.
 
 ```
-kubectl exec -n openstad -it [image-podname] knex seed:run
+kubectl exec -n openstad -it svc/openstad-image knex seed:run
 ```
-
-
 
 
 
@@ -284,7 +284,7 @@ helm get values openstad -n openstad
 Port forwarding to access in local browser:
 ```
 kubectl port-forward <pod_name> <local_port>:<pod_port>
-kubectl port-forward openstad-admin-ccf84f977-r4b5c 9999:7777
+kubectl port-forward -n openstad svc/openstad-api 8111:8111
 ```
 This way you can access adminer in local browser
 
@@ -292,7 +292,7 @@ Currently fixtures are not being set properly.
 Easy way to access the database to set correct config in database
 
 ```
-kubectl port-forward -n openstad svc/openstad-adminer 8111:8080
+kubectl port-forward -n openstad svc/openstad-adminer 8222:8080
 ```
 
 After the command has started stating `Forwarding from 127.0.0.1:8111 -> 8080` you can open your browser to [http://localhost:8111/](http://localhost:8111/).
