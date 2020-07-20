@@ -1,6 +1,5 @@
-> :warning: **This is a work in progress**: Not finished yet
-
 Prerequisites (version matter!):
+
 - Kubectl (1 version within digital ocean cluster version). See [Kubectl installation.](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 - Helm (version 3). See https://www.digitalocean.com/community/tutorials/how-to-install-software-on-kubernetes-clusters-with-the-helm-3-package-manager
 
@@ -62,6 +61,7 @@ nginx-ingress-default-backend   ClusterIP      10.999.223.138   <none>          
 
 Set the DNS records for following domains. 
 
+- *domainname.com*
 - www.*domainname.com*
 - www.api.*domainname.com*
 - www.auth.*domainname.com*
@@ -69,6 +69,8 @@ Set the DNS records for following domains.
 - www.img.*domainname.com*
 
 Advantage of first setting up domains is that Let's Encrypt configures the SSL certificates immediately.
+
+The main domain will be redirect to the non www. 
 
 If you have no domain, an alternative is xip.io which sends certain domain names automatically to your IP. For instance
 
@@ -89,7 +91,7 @@ Warning: use the **development** branch for now! (we expect to move first versio
 
 Go to k8s/openstad directory.
 
-Copy values.yaml and configure values. Create a custom-values.yaml and set the correct  values"
+Copy values.yaml and configure values. Create a custom-values.yaml and set the correct  values
 
 - Set correct base domain and set publicIp of load balancer, used for only requesting a let's encrypt certificate for hostnames if their dns is set correctly
 ```
@@ -245,6 +247,8 @@ kubectl exec -n openstad -it svc/openstad-image knex seed:run
 
 When everything went according to plan the base domain (for example www.amsterdam.openstad.org) should show a default empty openstad site. 
 
+
+
 If you go to /oauth/login you should should get to a login screen where you can login with the token you set in the installations process. 
 
 The admin panel is found with admin in front of the base: www.admin.amsterdam.openstad.org. The basic auth password is set in your values file. If e-mail is working we recommend switch the auth settings for your admin panel to e-mail.
@@ -288,7 +292,6 @@ kubectl port-forward -n openstad svc/openstad-api 8111:8111
 ```
 This way you can access adminer in local browser
 
-Currently fixtures are not being set properly.
 Easy way to access the database to set correct config in database
 
 ```
