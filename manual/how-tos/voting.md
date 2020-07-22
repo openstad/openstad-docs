@@ -5,7 +5,7 @@ _Status: WIP_
 Onderscheid maken tussen het stemmen met de ideas-module en het stemmen met de begroot-module.
 Misschien opdelen in verschillende pagina's, zodat er direct naar de juiste pagina gelinkt kan worden vanuit de proces-beschrijvingen?
 
-Ook beschrijven hoe de admin-panel instellingen moeten staan voor de verschillende stemprocessen
+Ook beschrijven hoe de admin-panel instellingen moeten staan voor de verschillende stemprocessen --> o.a. waarschuwing en voor- en nadelen van de stemmen openbaar beschikbaar maken
 
 Ideas:
 * Hier wordt heen verwezen vanuit proces 'Wedstrijd'
