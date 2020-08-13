@@ -9,7 +9,7 @@ Main commands are kubectl and helm.
 
 ###1. Creat a Kubernetes Cluster in Digital Ocean
 
-Select at least 3 nodes for a development cluster. Creating will take a  few minutes.
+Select at least 3 nodes for a development cluster. Creating will take a few minutes.
 
 ### 2. Add Config of cluster to your local machine
 

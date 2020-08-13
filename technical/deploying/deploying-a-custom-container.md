@@ -25,7 +25,7 @@ Every repository has a travis.yml file that would work automatically if a travis
 For instance the frontend has a .travis.yml file and de docker_publish script: https://github.com/Amsterdam/openstad-frontend/tree/development
 
 The publish script cert environment variables, these can be saved in repository settings in the Travis dashboard:
-- DOCKER_USER
+- DOCKER_USERNAME
 - DOCKER_PASSWORD
 
 
@@ -38,6 +38,3 @@ For deploy to work, the above variables are necessary and needed to add the kube
 This is the kubeconfig generated encoded to a base64 string. For instance can be generated like this:
 
 `cat ${HOME}/.kube/config | base64 | pbcopy`
-
-
-
