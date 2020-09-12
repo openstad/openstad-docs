@@ -2,9 +2,9 @@
 
 The API sends a few type of e-mails.
 
-## Confirmation after submitting an Idea
+## Confirmation after submitting an Idea or Article
 
-After submitting an idea an automatic Thank you e-mail is send to the user that submitted it.
+After submitting an idea or an article an automatic Thank you e-mail is send to the user that submitted it.
 
 By default this is a generic e-mail template. This can be customised per site in the config field of the Site model.
 
@@ -26,19 +26,17 @@ By default this is a generic e-mail template. This can be customised per site in
 }
 ```
 
-Template is a nunjucks parameter
+Template uses the nunjucks templating engine, the following variables are available in the template:
 
-**user**: het user object van de inzender
-**idea**: het idea object van de nieuwe inzending
-**HOSTNAME**: site.config.cms.hostname,
-**SITENAME**: site.title,
-**URL**: site.config.cms.url,
-**EMAIL**: from adres (email only),
-**inzendingURL**: site.config.cms.url + site.config.ideas.feedbackEmail.inzendingPath.replace(/\[\[ideaId\]\]/, idea.id),
+- **user**: user object that created the Idea (see rest API for properties)
+- **idea**: newly created Idea object (see rest API for properties)
+- **HOSTNAME**: Hostname url of the site, same as  site.config.cms.hostname
+- **SITENAME**: Name of the site, same as site.title
+- **URL**: URL of the site, sames as site.config.cms.url,
+- **EMAIL**: from adres (email only),
+- **inzendingURL**: The url leading to the path, warning path should be set correctly in the config since CMS can change the page: site.config.cms.url + site.config.ideas.feedbackEmail.inzendingPath.replace(/\[\[ideaId\]\]/, idea.id),
 
-**TODO**
-Misschien een config optie om dit uit te zetten?
-Inline images?
+
 
 ## Notifications to Moderators
 
@@ -60,22 +58,15 @@ Also possible to configure per site:
 }
 ```
 
-Template is een nunjucks template - zie later in deze pagina. Daar zijn de volgende variabelen beschikbaar:
+The notifications are bundles and send periodically so arguments and ideas are an array.
 
-**data.idea**: een array van idea objecten, met de user included, en een **inzendingURL** per idea
-**data.argument**: een array van argument objecten, met de user en idea included
-**HOSTNAME**: site.config.cms.hostname
-**SITENAME**: site.title
-**URL**: site.config.cms.url
+Template uses the nunjucks templating engine, the following variables are available in the template.
 
-**TODO**
-Misschien een config optie om dit uit te zetten?
-Misschien een config optie om de frequentie te bepalen?
-configureerbaar?
-Subject configureerbaar?
-Aparte templates voor ideas en arguments?
-Inline images?
+- **data.idea**: an array van idea objecten, met de user included, en een 
+- **inzendingURL** per idea
+- **data.argument**: een array van argument objecten, met de user en idea included
+- **HOSTNAME**: Hostname url of the site, same as  site.config.cms.hostname
+- **SITENAME**: Name of the site, same as site.title
+- **URL**: URL of the site, sames as site.config.cms.url
 
-## Nunjucks templates
 
-De email wordt opgemaakt met nunjucks; alle beschreven vars kunnen dus met nujucks syntax worden geinclude.
