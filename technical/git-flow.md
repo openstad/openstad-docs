@@ -6,7 +6,7 @@ This document describes the source management process used by the Openstad proje
 
 ## Overview
 
-![ git flow overview](/img/documentation/gitflow.svg)
+![ git flow overview](/img/gitflow.svg)
 
 Read Atlassian's awesome [Git Flow documentation](https://www.atlassian.com/git/tutorials/comparing-
 workflows/gitflow-workflow) for more information.
@@ -57,7 +57,7 @@ For creating a branch for version x.y.z
     git pull
     git checkout -b release/x.y.z
     # TODO: Bump version at this point on the *release* branch (see below for instructions)
-    
+
     # Get the version commit to develop
     git checkout development
     git merge --no-ff release/x.y.z
@@ -101,14 +101,14 @@ Cleanup
 * Releases should move the minor version 1.50.0 -> 1.51.0
 * Hotfixes should move the patch version so 1.50.0 -> 1.50.1
 
-### 
+###
 
     # Checkout to branch that should have the version updated
     git checkout {branch}
-    
+
     # Run the maven versions plugin to update version
     mvn -N versions:set -DnewVersion=x.y.z
-    
+
     # Commit the changes to Git
     git add .
     git commit -m 'Bump version'
