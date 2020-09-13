@@ -87,4 +87,5 @@
   * [Admin panel](technical/admin/README.md)
   * [Image server](technical/image/README.md)
   * [Contributing & versioning](technical/contributing.md)
+  * [Git flow](technical/git-flow.md)
   * [Roadmap](technical/roadmap.md)
