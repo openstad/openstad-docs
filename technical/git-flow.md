@@ -101,13 +101,9 @@ Cleanup
 * Releases should move the minor version 1.50.0 -> 1.51.0
 * Hotfixes should move the patch version so 1.50.0 -> 1.50.1
 
-###
 
     # Checkout to branch that should have the version updated
     git checkout {branch}
-
-    # Run the maven versions plugin to update version
-    mvn -N versions:set -DnewVersion=x.y.z
 
     # Commit the changes to Git
     git add .
