@@ -2,13 +2,11 @@
 
 The easiest way to get started with a development environment is to use docker-compose. An alternative is to install and configure all the server seperately, see the  (see the architecture section for this). This section will focus on docker-compose.
 
-Status: WIP
-
 Prerequisites:
 - Docker
 
 ## 1. Checkout openstad-app
-We've bundled our 5 nodejs servers in one git Repo openstad-app with git submodules. Be aware submodules in GIT work a bit different then regular git commits.
+We've bundled our 5 nodejs servers in one git Repo openstad-app with git submodules. Be aware submodules in GIT work a bit different then regular git repositories.
 
 https://github.com/Amsterdam/openstad-app
 
@@ -19,7 +17,7 @@ git submodule update --init --recursive
 ```
 
 ## 2. Create .env file before starting docker-compose
-First create the .env before running docker-compose the first time. There is an .env.example in openstad-app repo..
+First create the .env before running docker-compose the first time. There is an .env.example in openstad-app repo.
 
 On first startup docker compose will create the databases, changes to name of the database first startup you have to manually do them by logging into mysql through shell or a db tool like sqlpro, or just destroy the database volumes and start over. This step only makes sure the databases exists, the tables filling the databases are created in the next step.
 

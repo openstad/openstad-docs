@@ -1,6 +1,17 @@
 # Migrating database changes
 
+The API uses the popular NodeJS ORM called Sequalize to manage it's models and corresponding SQL queries (using either MariaDB or MySql). When first installing the tables can be created and seeded by running:
+
+```
+node reset.js
+```
+
+This command will reset the tables, so don't run on an existing installation.
+
+Af the databases are created every now and then database changes are necessary, these are run through the migrations.
+
 The following command will run the migrations, this should be run
+
 ```
 node migrate.js
 ```
@@ -14,3 +25,5 @@ node reset.js
 ```
 
 This means that if migrations and the model differ slightly a new database and migrated database is not always the (exactly) same.
+
+In a production setup alway run node migrate.js before deploymen. The Openstad Kubernetes setup takes care of this.

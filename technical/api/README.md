@@ -11,7 +11,7 @@ The Openstad API is a REST based api. It manages the data of the submitted ideas
 - [Newsletter Signup](/technical/api/resource-newslettersignup.md)
 
 ##Authentication and JWT
-Authentication of API call is done with a JWT. The API issues one after connecting with the auth server via the oAuth2 protocol/
+Authentication of API call is done with a JWT. The API issues one after connecting with the auth server via the oAuth2 protocol.
 
 See:
 - [Auth](/technical/api/auth.md)

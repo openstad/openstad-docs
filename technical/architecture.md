@@ -5,8 +5,6 @@ The Frontend can manage multiple sites, it automatically creates ApostropheCMS e
 
 ![Architecture schema](/img/scheme-architecture.png)
 
-
-
 ## Standard Page Request Flow
 
 1.1 A standard request comes into the frontend, then the frontend server checks if the domain is known in it's memory.
@@ -19,10 +17,6 @@ The Frontend can manage multiple sites, it automatically creates ApostropheCMS e
 
 3.2 If the domain is known the Frontend server gets the configuration returned for the site, checks if the mongob database exists and serves the site.
 
-
-
-
-
 ## NodeJS servers
 
 ### Frontend server: ApostropheCMS
@@ -34,7 +28,7 @@ The frontend CMS is developed in such a way that it can run multiple sites on on
 
 Installation instructions are found in the readme. MongoDB & Node.js are required. ApostropheCMS uses MongoDB for saving it's page data.
 
-**MongoDB version**: We use 4.0 as a latest version for mongodb because they have dropped support for the CopyDB command, which is a often used feature by the admin panel when copying and creating site. MongoDB recommends to write your own version
+**MongoDB version**: We use 4.0 as a latest version for mongodb because they have dropped support for the CopyDB command, which is a often used feature by the admin panel when copying and creating site. MongoDB recommends to write your own version, which we might do in the future.
 
 https://github.com/Amsterdam/openstad-frontend
 
@@ -52,7 +46,7 @@ https://github.com/Amsterdam/openstad-api
 
 
 ### OAuth Server
-The OAuth server is required for authenticating & voting users. Oauth server has a role and right system per client. One frontend site can have multiple clients per site. The auth server currently support 3 
+The OAuth server is required for authenticating & voting users. Oauth server has a role and right system per client. One frontend site can have multiple clients per site. The auth server currently supports the following authentication types: unique code, e-mail with loginlink (not password), anonymous and SMS.
 
 See the readme for installation.
 
@@ -74,8 +68,6 @@ The admin panel is an interface for managing the OAuth, frontend & API. All the 
 
 https://github.com/Amsterdam/openstad-management-panel
 
-
-
 ## Databases & Data management
 
 Openstad uses Mysql (or MariaDB) and Mongodb. Mysql is used by the auth, image and api for managing it's data.
@@ -84,12 +76,10 @@ ApostropheCMS uses MongoBD for the content of it's site.
 
 This means user submitted data, like argument,  goes to the Openstad REST API which saves it in mysql and exposes it through it's JSON REST Api. The less structured content of the website, like layout info,image, text, video's used for structuring the webpages and managed by the moderators is save in MongoDB by ApostropheCMS.
 
-
-
 ## Frontend Frameworks
 
-The frontend application is managed by ApostropheCMS, but to prevent confusion ApostropheCMS is not the frontend framework we use. Redux has the preference for managing state.
+The frontend application is managed by ApostropheCMS, but to prevent confusion ApostropheCMS is not the frontend framework we use. 
 
 For new JS applications React.js is used. We load it into the frontend via a CDN, for instance via the JS delivery CDN. Often it's wrapped in an ApostropheCMS module which allows for the benefitis of easy management of configuration and loading into every application.
 
-JQuery is used by ApostopheCMS 2. And there are some old jQuery scripts from the openstad code base, the important ones, like voting will be moved to react.js in the future. Simple enhancements, like alerts, will stay in jQuery for now.
+JQuery is used by ApostopheCMS 2. And there are some old jQuery scripts from the openstad code base, the important ones, like voting will be moved to react.js in the future. Simple site enhancements, like alerts, will stay in jQuery for now.

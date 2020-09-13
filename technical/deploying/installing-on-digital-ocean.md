@@ -11,6 +11,8 @@ Main commands are kubectl and helm.
 
 Select at least 3 nodes for a development cluster. Creating will take a few minutes.
 
+For a smaller and development installation site the default 3 nodes of $20,- per node will do. For most production environments at least 3 nodes of 40,- per months are advised, which should give 3*8GB ram and 3 * 4 CPU. Note that the default resources allocated to a pod is set low in the values.yml, so if you get a bigger machine add higher resouce limits. Mainly the frontend pod could use more CPU, the image server every now and then uses a lot of memory when many images gets resized at once.
+
 ### 2. Add Config of cluster to your local machine
 
 Once your cluster installed you can download the config file and set it to your kubectl config
@@ -38,7 +40,7 @@ Make sure you already installed the stable repository during the installation of
 
 `helm repo add stable https://kubernetes-charts.storage.googleapis.com`
 
-
+It's also possible to install nginx-ingress in the wizard steps on the Digital Ocean platform.
 
 ### 4. Set your DNS
 
@@ -77,7 +79,11 @@ If you have no domain, an alternative is xip.io which sends certain domain names
 - www.api.*178.128.136.92.xip.io*
 - www.auth.*178.128.136.92.xip.io*
 
+For convenience sake we also advice adding a wildcard subdomain that users can use to create websites through the admin panel without having to create a DNS record every time. Cert manager will automatically generate an SSL cert. Something like this:
 
+- **.stem.denhaag.nl*
+
+You can add this below in the custom-values.yml in order for the admin panel to display this in the frontend.
 
 ###5. Clone the Kubernetes Repository
 
@@ -128,6 +134,8 @@ host:
 
 
 - check which containers are set, *latest one currently is development (and devel for API)*, but be aware these are auto pushed on git updates, so it might break every know and then for now. Around mid august 2020 we plan to move everything to the master branch and the latest tag and have a more stable application
+- Check resources, if possible add more memory and cpu to Frontend, API and Image server
+- Set wildcard host, see previous step, for admin deployment for easy site creation: *wildcardHost*
 - Preferrably set mail server for sending emails, but will work without on first install, so can be added later.
 ```
 ### Mail server secretes
@@ -149,6 +157,8 @@ mail:
     password:
     requireSsl:
 ```
+
+
 
 
 

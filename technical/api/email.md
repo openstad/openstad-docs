@@ -4,7 +4,7 @@ The API sends a few type of e-mails.
 
 ## Confirmation after submitting an Idea or Article
 
-After submitting an idea or an article an automatic Thank you e-mail is send to the user that submitted it.
+After submitting an idea or an article an automatic *Thank you e-mail* is send to the user that submitted it.
 
 By default this is a generic e-mail template. This can be customised per site in the config field of the Site model.
 
@@ -40,9 +40,9 @@ Template uses the nunjucks templating engine, the following variables are availa
 
 ## Notifications to Moderators
 
-Notifications can be send to moderators for newly submitted ideas and updates to ideas.
+Notifications can be send to moderators to let them know if ideas and argumens have been created or edited on their site.
 
-Also possible to configure per site:
+The e-mail template is also configrable per site:
 
 ```
 {
