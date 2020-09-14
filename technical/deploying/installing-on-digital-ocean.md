@@ -99,7 +99,7 @@ Go to k8s/openstad directory.
 
 Copy values.yaml and configure values. Create a custom-values.yaml and set the correct  values
 
-- Set correct base domain and set publicIp of load balancer, used for only requesting a let's encrypt certificate for hostnames if their dns is set correctly
+- Set correct base domain and set publicIp of load balancer, used for only requesting a let's encrypt certificate for hostnames if their dns is set correctly, publicIp is important because the API will otherwise start to block if server makes to many requests.
 ```
 ## Settings for DNS
 host:
@@ -114,7 +114,6 @@ host:
 - update custom mysql password,
 - Set the auth credentials, the firstLTokenLogin will allow you to login with the token into admin panel en first website. You can leave the rest empty, will be auto generated
 
-    ### Overwrites for auth db
     auth:
       dbName: auth
       credentials:
@@ -134,8 +133,8 @@ host:
 
 
 - check which containers are set, *latest one currently is development (and devel for API)*, but be aware these are auto pushed on git updates, so it might break every know and then for now. Around mid august 2020 we plan to move everything to the master branch and the latest tag and have a more stable application
-- Check resources, if possible add more memory and cpu to Frontend, API and Image server
-- Set wildcard host, see previous step, for admin deployment for easy site creation: *wildcardHost*
+- Check resources, if possible add more memory and cpu to Frontend, API and Image server.
+- Set wildcard host, see previous step, for admin deployment for easy site creation: *wildcardHost*.
 - Preferrably set mail server for sending emails, but will work without on first install, so can be added later.
 ```
 ### Mail server secretes
