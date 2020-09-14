@@ -18,8 +18,9 @@ workflows/gitflow-workflow) for more information.
 * The latest stable release.
 * Tagged according to 's versioning scheme.
 * Commits merged from hotfix and release branches.
+* Once released add date and version number to changelog
 
-### develop
+### development
 
 * The work-in-progress next release.
 * Commits merged from pull requests.
@@ -28,8 +29,8 @@ workflows/gitflow-workflow) for more information.
 
 * Development for a new feature
 * These should be used in forks, not the official repositories
-* Once the feature is completed the branch will be merged into develop
-* See [how to contribute](how-to-contribute) for Git instructions
+* Once the feature is completed the branch will be merged into development
+* For every feature merged add to explanation to changelog
 
 ### release/x.y.z
 
@@ -42,6 +43,9 @@ workflows/gitflow-workflow) for more information.
 
 * When urgent bugfixes are required for the latest release a hotfix-branch is opened based on the current master-branch
 * Once the fixes are completed the branch will be merged into develop and master
+* For every hot fix merged add to explanation to changelog
+
+### 
 
 #### External branches
 
@@ -57,7 +61,7 @@ For creating a branch for version x.y.z
     git pull
     git checkout -b release/x.y.z
     # TODO: Bump version at this point on the *release* branch (see below for instructions)
-
+    
     # Get the version commit to develop
     git checkout development
     git merge --no-ff release/x.y.z
@@ -104,7 +108,7 @@ Cleanup
 
     # Checkout to branch that should have the version updated
     git checkout {branch}
-
+    
     # Commit the changes to Git
     git add .
     git commit -m 'Bump version'

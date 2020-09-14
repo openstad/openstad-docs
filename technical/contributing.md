@@ -2,7 +2,7 @@
 
 Code and documentation contributions are done with pull requests for the appropriate repositories (frontend, api, auth, admin, image). When implementing a feature you should consider if the implementation is generic in a sense that it's usable outside your customized application. If the implementation is generic it should be placed on the core-repositories. If you think no-one else might not benefit from the code as it's too application-specific it propably shouldn't be in the core-repositories. Remember you can always ask the community for opinions. Find us at slack: 
 
-To submit code we follow the well known Git Flow, read more at the [Git flow page](technical/git-flow.md).
+To submit code we follow the well known Git Flow, read more at the [Git flow page](/technical/git-flow.md).
 
 The frontend server use ApostropheCMS that allows for creating custom widgets that can be loaded per site, for custom widgets best is to create an own repository and allow other installation the ability to load it in with NPM. 
 
