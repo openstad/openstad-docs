@@ -28,7 +28,7 @@ https://github.com/digitalocean/doctl
 
 ### 3. Install Nginx-Ingress
 
-Most cloud providers come with a load balancer for ingress. 
+Most cloud providers come with a load balancer for ingress.
 
 Easiest it to install it yourself with helm:
 
@@ -61,7 +61,7 @@ nginx-ingress-default-backend   ClusterIP      10.999.223.138   <none>          
 ```
 
 
-Set the DNS records for following domains. 
+Set the DNS records for following domains.
 
 - *domainname.com*
 - www.*domainname.com*
@@ -72,7 +72,7 @@ Set the DNS records for following domains.
 
 Advantage of first setting up domains is that Let's Encrypt configures the SSL certificates immediately.
 
-The main domain will be redirect to the non www. 
+The main domain will be redirect to the non www.
 
 If you have no domain, an alternative is xip.io which sends certain domain names automatically to your IP. For instance
 
@@ -88,8 +88,6 @@ You can add this below in the custom-values.yml in order for the admin panel to 
 ###5. Clone the Kubernetes Repository
 
 Find the Kubernetes repository at https://github.com/Amsterdam/openstad-kubernetes. Clone it and go into the k8s/openstad folder. All commands and file below are present in this subdirectory.
-
-Warning: use the **development** branch for now! (we expect to move first version to master in august 2020)
 
 
 
@@ -108,7 +106,7 @@ host:
   ### to this url
   ### e.g. subdomain.example.com
   base: amsterdam.openstad.org
-  publicIp: 
+  publicIp:
 ```
 
 - update custom mysql password,
@@ -132,7 +130,7 @@ host:
         password:
 
 
-- check which containers are set, *latest one currently is development (and devel for API)*, but be aware these are auto pushed on git updates, so it might break every know and then for now. Around mid august 2020 we plan to move everything to the master branch and the latest tag and have a more stable application
+- check which containers are set, *latest one currently is v0.7.* (17-10-2020)*
 - Check resources, if possible add more memory and cpu to Frontend, API and Image server.
 - Set wildcard host, see previous step, for admin deployment for easy site creation: *wildcardHost*.
 - Preferrably set mail server for sending emails, but will work without on first install, so can be added later.
@@ -182,7 +180,7 @@ In custom-values.yml:
 ## Settings for Cert-Manager/Cluster issuer
 clusterIssuer:
   enabled: false  # Whether this issuer is created
-	
+
 ```
 
 ```
@@ -218,7 +216,7 @@ helm upgrade  -f custom-values.yaml openstad . -n openstad
 
 ## 10. Mysql Table creation & seeding
 
-At the moment table creation and seeding has to be done manual. There are some automatic jobs being developed to automate this proces, but for now  easiest and most stable is to run the migrations directly in the pods. 
+At the moment table creation and seeding has to be done manual. There are some automatic jobs being developed to automate this proces, but for now  easiest and most stable is to run the migrations directly in the pods.
 
 1.1 Create the api site entries (runs both basic migrations and seeds.). This seed run will empty the tables, so don't use once running.
 
@@ -254,11 +252,11 @@ kubectl exec -n openstad -it svc/openstad-image knex seed:run
 
 ## What to expect
 
-When everything went according to plan the base domain (for example www.amsterdam.openstad.org) should show a default empty openstad site. 
+When everything went according to plan the base domain (for example www.amsterdam.openstad.org) should show a default empty openstad site.
 
 
 
-If you go to /oauth/login you should should get to a login screen where you can login with the token you set in the installations process. 
+If you go to /oauth/login you should should get to a login screen where you can login with the token you set in the installations process.
 
 The admin panel is found with admin in front of the base: www.admin.amsterdam.openstad.org. The basic auth password is set in your values file. If e-mail is working we recommend switch the auth settings for your admin panel to e-mail.
 
