@@ -17,7 +17,7 @@ The documentation of ApostropheCMS is comprehensive and good place to start if y
 
 
 ## The Openstad version of ApostropheCMS
-We have bundled the ApostropheCMS as an Openstad CMS local npm pacakage. This package lives in the packages/cms folder and the modules are overrideable just like ApostropheCms modules. Simple create the files you want to override directly under lib/modules.
+We have bundled the ApostropheCMS as an Openstad CMS local npm pacakage. This package lives in the packages/cms folder and the modules are overrideable just like ApostropheCMS modules. Create the files you want to override directly under lib/modules.
 
 This is a core feature of the ApostropheCMS and because of the way we bundled it works for both the ApostropheCMS modules and the Openstad modules. [ApostropheCms module pattern](https://docs.apostrophecms.org/core-concepts/technical-overview.html#apostrophe-s-module-pattern-inheritance-and-moog)
 
@@ -51,7 +51,7 @@ var apos = openstadCms.site({
 ```
 
 **2. Override existing Openstad or Apostrophe module**
-To override or extend an existing module you can simple add the files under lib/modules. 
+To override or extend an existing module you can add the files under lib/modules. 
 **example:
 If you want to modify the html of the agenda-widgets you only need to create the `lib/modules/agenda-widgets/views/widget.html` file and you're free to change the html structure.
 ```html
@@ -106,9 +106,9 @@ apos.define('resource-form-widgets', {
 
 **3. Create a standalone module and install this as a npm dependency**
 
-It's also possible to make your own standalone packages for the Openstad project. You simple need to create a package and publish it to npm and add the dependency in your package.json.
+It's also possible to make your own standalone packages for the Openstad project. You need to create a package and publish it to npm and add the dependency in your package.json.
 
-For more information plrease refer to the Apostrophe documentation: https://docs.apostrophecms.org/core-concepts/modules/more-modules.html#packaging-apostrophe-modules-together-creating-bundles
+For more information please refer to the Apostrophe documentation: https://docs.apostrophecms.org/core-concepts/modules/more-modules.html#packaging-apostrophe-modules-together-creating-bundles
 
 
 **4. Create a Pull request in the openstad/cms package if you want to change something directly in the core module:**
