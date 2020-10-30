@@ -19,7 +19,7 @@
         * [Widgets](manual/how-tos/add-widgets.md)
         * [Aanpassen en verwijderen](manual/how-tos/edit-delete-widgets.md)
         * [Herstellen](manual/how-tos/revert.md)
-     * [Plannen indienen](manual/how-tos/upload-ideas.md)
+     * [Inzendingen uploaden](manual/how-tos/upload-ideas.md)
      * [Plannen weergeven](manual/how-tos/show-ideas.md)
      * [Filteren en categoriseren van plannen](manual/how-tos/filter-ideas.md)
      * [Likes verzamelen](manual/how-tos/like-ideas.md)
