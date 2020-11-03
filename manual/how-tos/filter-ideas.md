@@ -1,4 +1,4 @@
-# Filteren en categoriseren van plannen
-[TODO - Moet mogelijk onder 'Plannen weergeven' (hierboven) beschreven worden ]
+# Filteren en categoriseren van inzendingen
+[TODO - Moet mogelijk onder 'Inzendingen weergeven' (hierboven) beschreven worden ]
 * Thema's
 * Tags
