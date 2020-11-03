@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Participatie processen (project management)]
+* [Participatie processen (project management)] (processes/project_management.md)
   * [Voorkeurspeiling](processes/poll(PM).md)
   * [Wedstrijd](processes/contest(PM).md)
   * [Participatief begroten](processes/participatory-budgeting(PM).md)
