@@ -30,7 +30,7 @@ Tijdens de indienfase zijn de volgende how-to's relevant:
 
 ### Afronding van de indienfase
 
-Het sluiten van de indienfase bestaat uit twee stappen. Om de bewoners die op de laatste dag hun plan hebben ingediend nog de mogelijkheid te geven om voldoende likes te verzamelen, kan de mogelijkheid om plannen in te dienen eerder gesloten worden dan de mogelijkheid om likes te geven (met bijvoorbeeld een week ertussen).
+Het sluiten van de indienfase bestaat uit twee stappen. Om de bewoners die op de laatste dag hun plan hebben ingediend nog de mogelijkheid te geven om voldoende likes te verzamelen, kan de mogelijkheid om plannen in te dienen (een week) eerder gesloten worden dan de mogelijkheid om likes te geven.
 
 Het sluiten van de indienperiode gaat als volgt:
 1. Pas de pagina's van de website aan, zodat het voor bezoekers duidelijk is dat er geen plannen meer ingediend kunnen worden, maar dat bezoekers de ingediende plannen nog wel kunnen liken.
