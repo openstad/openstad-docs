@@ -1,0 +1,5 @@
+# Raw
+
+Op verschillende plekken in de software kun je de mogelijkheid tegenkomen om ‘raw’ input in te voeren. Dit betekent dat er hier ruimte is om HTML met Nunjucks templating code [ TODO URL toevoegen [https://mozilla.github.io/nunjucks/](https://mozilla.github.io/nunjucks/) ] in te voeren. Hiervoor is enige webontwikkeling ervaring vereist.
+
+In de verschillende gevallen dat er ruimte is om zelf raw code in te voeren, kan er ook gebruik gemaakt worden van verschillende variabelen die middels Nunjucks weergegeven kunnen worden [ TODO link naar nunjucks docs over variables [https://mozilla.github.io/nunjucks/templating.html#variables](https://mozilla.github.io/nunjucks/templating.html#variables) ]. Welke variabelen dat zijn, wordt in de desbetreffende Widget referentie [ TODO link naar widgets referentie ] op een rijtje gezet.
