@@ -1,4 +1,4 @@
-# Participatief begroten - Opzetten digitale tools
+# Participatief begroten (Inrichten digitale tools)
 
 _Status: WIP_
 

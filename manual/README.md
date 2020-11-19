@@ -1,3 +1,3 @@
-# Gebruikershandleiding
+# Digitale tools - Gebruikershandleiding
 
 [ TODO inleiding ]
