@@ -1,4 +1,4 @@
-# Participatief begroten
+# Participatief begroten - Opzetten digitale tools
 
 _Status: WIP_
 
@@ -7,14 +7,16 @@ _Status: WIP_
 [TODO er is vaak budget beschikbaar, waarvan de gemeente wil dat de bewoners bepalen wat hiermee gebeurt. ]
 
 Een begroot process bestaat uit drie hoofdfasen.
-1. Indienfase 
-2. Toetsing haalbaarheid 
-3. Stemfase
+1. [Indienfase](#indienfase)
+2. [Tussenfase](#tussenfase)
+3. [Stemfase](#stemfase)
 
 Voorbeelden van het 'participatief begroten'-proces zijn te vinden onder de 'Use cases' op OpenStad.org. [TODO link naar het use cases overzicht toevoegen, en mogelijk hieronder een opsomming van specifieke use cases]
 
 
 ## Indienfase
+
+> [Lees hier waar je in deze fase rekening mee moet houden wat betreft procesontwerp en projectmanagement](/processes/participatory-budgeting-PM.md#indienfase)
 
 Tijdens de indienfase worden bewoners van een bepaald gebied uitgenodigd om ideeën die ze hebben voor hun buurt te uploaden. Bewoners dienen plannen in door middel van het invullen van een formulier op de website. De plannen kunnen ‘geliked’ worden en andere bewoners kunnen reacties plaatsen bij een plan. 
 
@@ -46,7 +48,9 @@ Het sluiten van de mogelijkheid om te liken gaat als volgt:
 1. Pas de pagina's van de website aan, zodat het voor bezoekers duidelijk is dat ook de ingediende plannen niet meer geliked kunnen worden.
 2. Wijzig de status van de ingediende plannen om het liken uit te schakelen. Hoe dit werkt is beschreven in de volgende how-to: [Likes verzamelen](../manual/how-tos/like-ideas.md)
 
-## Tussenfase: toetsing haalbaarheid
+## Tussenfase
+
+> [Lees hier waar je in deze fase rekening mee moet houden wat betreft procesontwerp en projectmanagement](/processes/participatory-budgeting-PM.md#tussenfase)
 
 [ TODO proces-beschrijving hier weghalen en doorverwijzen? ]
 
@@ -67,6 +71,9 @@ Voor deze fase zijn de volgende how-to's relevant:
 * [Unieke stemcodes](manual/how-tos/voting-codes.md) - genereer unieke stemcodes, en lees tips om deze op de juiste manier te verwerken.
 
 ## Stemfase
+
+> [Lees hier waar je in deze fase rekening mee moet houden wat betreft procesontwerp en projectmanagement](/processes/participatory-budgeting-PM.md#stemfase)
+
 Voor deze fase wordt aan de achterkant een nieuwe website gebruikt. Dit heeft als voordeel dat de originele ingediende plannen van bewoners bewaard blijven en als archief kunnen dienen, terwijl op de stemsite alleen de plannen geplaatst worden die door zijn naar de stemfase. Deze plannen kunnen hier ook een aangepaste (kortere) beschrijving krijgen volgens een format dat bij alle plannen overeenkomt, zodat ze goed te vergelijken zijn. Een ander voordeel is dat deze website opgezet, gevuld en getest kan worden, terwijl voor bezoekers de indienwebsite nog zichtbaar is.
 
 ### Voorbereiding stemfase

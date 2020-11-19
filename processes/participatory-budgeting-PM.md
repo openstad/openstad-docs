@@ -1,4 +1,4 @@
-# Participatief begroten_PM
+# Participatief begroten - Projectmanagement
 
 _Status: WIP_
 
@@ -8,9 +8,9 @@ Voorbeelden van het 'participatief begroten'-proces zijn te vinden onder de 'Use
 
 Dit proces bestaat uit 3 verschillende fases. 
 
-1. Indienfase
-2. Tussenfase / haalbaarheidstoets
-3. Stemfase
+1. [Indienfase](#indienfase)
+2. [Tussenfase](#tussenfase)
+3. [Stemfase](#stemfase)
 
 
 Planning
@@ -23,20 +23,17 @@ Tijdens de indienfase is het voor bewoners mogelijk om plannen te uploaden voor 
 
 Om de bewoners die op de laatste dag hun plan hebben ingediend nog de mogelijkheid te geven om voldoende likes te verzamelen, kan de mogelijkheid om plannen in te dienen (een week) eerder gesloten worden dan de mogelijkheid om likes te geven.
 
-
-
-
+> [Lees hier hoe je de digitale tools voor deze fase kunt opzetten](/manual/processes/participatory-budgeting.md#indienfase)
 
 ## Tussenfase
 In deze fase blijft de indienwebsite zichtbaar voor het publiek. Tijdens de tussenfase worden de ingediende plannen (die de stemdrempel hebben gehaald) op haalbaarheid onderzocht. Mogelijk wordt er binnen de haalbare plannen nog een selectie gemaakt, om het totaal aantal plannen uiteindelijk op de stemsite wat te beperken.
 
 Er vanuit gaande dat er een behoorlijk bedrag beschikbaar is dat door bewoners verdeeld wordt, is het waarschijnlijk wenselijk dat bewoners kunnen stemmen met een unieke persoonlijke stemcode. Deze stemcodes moeten aangemaakt worden, en gecombineerd worden met gegevens uit de Basisregistratie Personen (BRP).
 
+> [Lees hier hoe je de digitale tools voor deze fase kunt opzetten](/manual/processes/participatory-budgeting.md#tussenfase)
+
 ## Stemfase
 Voor deze fase wordt aan de achterkant een nieuwe website gebruikt. Dit heeft als voordeel dat de originele ingediende plannen van bewoners bewaard blijven en als archief kunnen dienen, terwijl op de stemsite alleen de plannen geplaatst worden die door zijn naar de stemfase. Deze plannen kunnen hier ook een aangepaste (kortere) beschrijving krijgen volgens een format dat bij alle plannen overeenkomt, zodat ze goed te vergelijken zijn. Een ander voordeel is dat deze website opgezet, gevuld en getest kan worden, terwijl voor bezoekers de indienwebsite nog zichtbaar is.
-
-
-
 
 ### Authenticatie 
 In deze beschrijving  van het process wordt gebruik gemaakt van 3 verschillende authenticatie methoden.
@@ -55,3 +52,5 @@ Het is belangrijk om de spelregels van het proces voorafgaand aan het proces dui
 - Hoe komt de uitslag tot stand
 - Wat gebeurt er met de uitslag
 - omgangsregels in geval van reactiemogelijkheid
+
+> [Lees hier hoe je de digitale tools voor deze fase kunt opzetten](/manual/processes/participatory-budgeting.md#stemfase)
