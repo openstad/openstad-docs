@@ -1,4 +1,12 @@
-# Participatie processen
+# Participatieprocessen - Opzetten digitale tools
+
+_Status: WIP_
+
+> ###### 'Project management' vs. 'Opzetten digitale tools'
+> Er komen een hoop verschillende dingen kijken bij het ontwerpen, voorbereiden, lanceren en uitvoeren van participatieprocessen. Vaak doe je dit niet alleen maar met een team. De documentatie die de verschillende participatieprocessen beschrijft is daarom opgesplitst in twee delen;
+> - Procesontwerp en projectmanagement: wat komt er allemaal kijken bij een participatieproces, waar moet je rekening mee houden en keuzes in maken? ([Participatieprocessen - Project management](/processes))
+> - Opzetten digitale tools: hoe kunnen de digitale tools van de OpenStad software ingezet en geconfigureerd worden om het ontworpen participatieproces te ondersteunen? (deze pagina)
+
 Overzicht van de verschillende participatie processen die we ondersteunen.
 Hier worden de belangrijkste stappen/onderdelen/beweegredenen voor de processen uiteengezet, en er wordt vanuit hier verwezen naar de verschillende [how-to's](../manual/how-tos/) waar deze processen op leunen.
 

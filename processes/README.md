@@ -1,13 +1,18 @@
 
-# Participatie projecten - project management
+# Participatieprocessen - Project management
 
 _Status: WIP_
+
+> ###### 'Project management' vs. 'Opzetten digitale tools'
+> Er komen een hoop verschillende dingen kijken bij het ontwerpen, voorbereiden, lanceren en uitvoeren van participatieprocessen. Vaak doe je dit niet alleen maar met een team. De documentatie die de verschillende participatieprocessen beschrijft is daarom opgesplitst in twee delen;
+> - Procesontwerp en projectmanagement: wat komt er allemaal kijken bij een participatieproces, waar moet je rekening mee houden en keuzes in maken? (deze pagina)
+> - Opzetten digitale tools: hoe kunnen de digitale tools van de OpenStad software ingezet en geconfigureerd worden om het ontworpen participatieproces te ondersteunen? ([OpenStad software gebruikershandleiding > Participatieprocessen - Opzetten digitale tools](/manual/processes))
 
 We beschrijven hier een aantal belangrijke onderwerpen waar goed over na moet worden gedacht voordat er wordt begonnen aan het ontwerpen en inrichten van bijbehorende tools. 
 
 
-## Participatie processen
-Overzicht van drie verschillende participatie processen die we ondersteunen. In dit hoofdstuk worden de belangrijkste stappen/onderdelen/beweegredenen voor de processen uiteengezet wat betreft het project management. Voor de ontwerp ondersteuning van de tools bekijk [TODO link invoeren].
+## Participatieprocessen
+Overzicht van drie verschillende participatieprocessen die we ondersteunen. In dit hoofdstuk worden de belangrijkste stappen/onderdelen/beweegredenen voor de processen uiteengezet wat betreft het project management. Voor de ontwerp ondersteuning van de tools bekijk [TODO link invoeren].
 
 ### Processen
 * [Voorkeurspeiling](poll-PM.md) - Laat bewoners kiezen uit een beperkt aantal voorstellen, bijvoorbeeld tussen verschillende ontwerpen voor de herinrichting van een straat.
