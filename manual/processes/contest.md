@@ -1,4 +1,4 @@
-# Wedstrijd
+# Wedstrijd (Inrichten digitale tools)
 
 Dit proces wordt hier nu 'wedstrijd' genoemd, maar dit moet breed opgevat worden. Bewoners kunnen bijvoorbeeld een ontwerp, idee, foto of naam indienen. Uit de inzendingen worden één of meerdere winnaars gekozen. Het kiezen van de winnaars kan bijvoorbeeld gebeuren door medebewoners te laten stemmen, en/of door een juryprijs uit te reiken.
 

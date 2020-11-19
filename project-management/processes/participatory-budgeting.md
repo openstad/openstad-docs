@@ -1,4 +1,4 @@
-# Participatief begroten - Projectmanagement
+# Participatief begroten (Projectmanagement)
 
 _Status: WIP_
 

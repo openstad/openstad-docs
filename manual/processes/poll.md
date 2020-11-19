@@ -1,4 +1,4 @@
-# Voorkeurspeiling
+# Voorkeurspeiling (Inrichten digitale tools)
 
 _Status: WIP_
 
