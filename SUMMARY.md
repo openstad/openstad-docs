@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Participatieprocessen - Project management](processes/README.md)
+* [Participatieprocessen - Projectmanagement](processes/README.md)
   * [Algemene kaders voor participatieprocessen](processes/general-PM.md)
   * [Voorkeurspeiling](processes/poll-PM.md)
   * [Wedstrijd](processes/contest-PM.md)

@@ -2,12 +2,12 @@
 
 _Status: WIP_
 
-> ###### 'Project management' vs. 'Opzetten digitale tools'
+> ###### 'Projectmanagement' vs. 'Opzetten digitale tools'
 > Er komen een hoop verschillende dingen kijken bij het ontwerpen, voorbereiden, lanceren en uitvoeren van participatieprocessen. Vaak doe je dit niet alleen maar met een team. De documentatie die de verschillende participatieprocessen beschrijft is daarom opgesplitst in twee delen;
-> - Procesontwerp en projectmanagement: wat komt er allemaal kijken bij een participatieproces, waar moet je rekening mee houden en keuzes in maken? ([Participatieprocessen - Project management](/processes))
+> - Procesontwerp en projectmanagement: wat komt er allemaal kijken bij een participatieproces, waar moet je rekening mee houden en keuzes in maken? ([Participatieprocessen - Projectmanagement](/processes))
 > - Opzetten digitale tools: hoe kunnen de digitale tools van de OpenStad software ingezet en geconfigureerd worden om het ontworpen participatieproces te ondersteunen? (deze pagina)
 
-Overzicht van de verschillende participatie processen die we ondersteunen.
+Overzicht van de verschillende participatieprocessen die we ondersteunen.
 Hier worden de belangrijkste stappen/onderdelen/beweegredenen voor de processen uiteengezet, en er wordt vanuit hier verwezen naar de verschillende [how-to's](../manual/how-tos/) waar deze processen op leunen.
 
 ## Processen
@@ -20,4 +20,4 @@ Er wordt hard gewerkt om bovenstaande lijst uit te breiden met nieuwe vormen van
 * Gebiedsontwikkeling - met behulp van een interactieve kaart [TODO korte uitleg]
 
 ## Bedenk je eigen proces!
-Bovenstaande voorbeelden zijn gebaseerd op use-cases waarvoor de tools in eerste instantie ontwikkeld zijn. Maar hier ben je niet per definitie aan gebonden! De opzet is zo flexibel mogelijk gemaakt dat er ook andere participatie processen mee te ondersteunen zijn. [TODO verder beschrijven en uiteindelijk verwijzen naar how-to's]
+Bovenstaande voorbeelden zijn gebaseerd op use-cases waarvoor de tools in eerste instantie ontwikkeld zijn. Maar hier ben je niet per definitie aan gebonden! De opzet is zo flexibel mogelijk gemaakt dat er ook andere participatieprocessen mee te ondersteunen zijn. [TODO verder beschrijven en uiteindelijk verwijzen naar how-to's]
