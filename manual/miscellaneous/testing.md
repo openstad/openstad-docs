@@ -9,3 +9,5 @@ Het is verstandig de websites altijd nog eens goed na te lopen en te testen voor
 * Stemmen weer verwijderen via admin panel
 * Unieke stemcodes: paar apart houden om te testen, daarna niet veregten stemmen te verwijderen
 * ...
+
+[ TODO Wordt o.a. naar verwezen in de how-to ‘Unieke stemcodes’. Uitleggen hoe je stemcodes test en deze ook weer verwijderd voor livegang. ]

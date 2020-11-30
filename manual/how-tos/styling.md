@@ -3,7 +3,7 @@ There are several ways to style elements & the website: modules have CSS setting
 
 The negative site of using CSS directly is that it's a bit more complex to learn. The positive site it's a very well known system with lot of only documentation.
 
-## Anpassen van een logo
+## Aanpassen van een logo
 Een logo kan online upgeload worden worden.  Dit kan voor desktop en los voor mobiel, voor sommige steden waaronder Amsterdam.
 ![Logo in global](/img/logo-in-global.png)
 

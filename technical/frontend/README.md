@@ -17,8 +17,99 @@ The documentation of ApostropheCMS is comprehensive and good place to start if y
 
 
 ## The Openstad version of ApostropheCMS
-We have bundled the ApostropheCMS as Openstad CMS local npm pacakage. The files are found packages/cms this his allows for the core files to be overwritten without needing to change the core files. Simple create the files you want to overwrite directly under lib/modules.
+We have bundled the ApostropheCMS as an Openstad CMS local npm pacakage. This package lives in the packages/cms folder and the modules are overrideable just like ApostropheCMS modules. Create the files you want to override directly under lib/modules.
 
-This is a core feature of the ApostropheCMS and because of the way we bundled it works for both the ApostropheCMS widgets and the Openstad widgets.
+This is a core feature of the ApostropheCMS and because of the way we bundled it works for both the ApostropheCMS modules and the Openstad modules. [ApostropheCms module pattern](https://docs.apostrophecms.org/core-concepts/technical-overview.html#apostrophe-s-module-pattern-inheritance-and-moog)
 
-For now  treat it as a local NPM package, in the future this will be moved to an external NPM package.
+For now  treat it as a local NPM package, in the future this will be moved to an external NPM package (@openstad/cms).
+
+There are multiple ways to add or modify modules. It depends on what you want to achieve and how you run the project.  
+
+**1. Add new module to the root project in lib/modules:**
+- Create new module in `lib/modules`
+- Create index.js file in you modules folder (e.g. `lib/modules/custom-module/index.js`), example:
+```js
+module.exports = {  
+  label: 'custom module',
+  construct: function(self, options) {
+    
+  }
+};
+```
+- Add the new module to your project in the index.js:
+```js
+var apos = openstadCms.site({
+  bundles: ['@openstad/cms'],
+  // See lib/modules for basic project-level configuration of our modules
+  // responsible for serving static assets, managing page templates and
+  // configuring user accounts.
+
+  modules: { 
+    'custom-module': {}
+   }
+});
+```
+
+**2. Override existing Openstad or Apostrophe module**
+To override or extend an existing module you can add the files under lib/modules. 
+**example:
+If you want to modify the html of the agenda-widgets you only need to create the `lib/modules/agenda-widgets/views/widget.html` file and you're free to change the html structure.
+```html
+<style>
+  {{data.widget.formattedContainerStyles}}
+</style>
+
+<div id="{{data.widget.containerId}}" class="agenda">
+{% for item in data.widget.items %}
+  <div class=" {{'agenda-period' if (item.period === true) or (item.period === 'period') else 'agenda-day' }}">
+    <div>
+      <h3> {{item.title | sanitize | safe}} </h3>
+      {% if item.actionText %}
+      {{item.actionText}}
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+</div>
+``` 
+
+Override/extend for example the section-widgets: `lib/modules/section-widgets/index.js`
+```js
+module.exports = {
+  construct(self, options) {
+    const superGetContentWidgets = self.getContentWidgets;
+
+    self.getContentWidgets = (req) => {
+      const contentWidgets = superGetContentWidgets(req);
+
+      contentWidgets['custom-content-widget'] = {
+        readOnly: false,
+        edit: true,
+      };
+
+      return contentWidgets;
+    }
+  }
+};
+
+```
+
+Override/extend a javascript module file `lib/modules/resource-form-widgets/public/js/map.js`
+```js
+apos.define('resource-form-widgets', {
+    
+    construct: function(self, options) {
+       console.log('do something special');
+    }
+});
+```
+
+**3. Create a standalone module and install this as a npm dependency**
+
+It's also possible to make your own standalone packages for the Openstad project. You need to create a package and publish it to npm and add the dependency in your package.json.
+
+For more information please refer to the Apostrophe documentation: https://docs.apostrophecms.org/core-concepts/modules/more-modules.html#packaging-apostrophe-modules-together-creating-bundles
+
+
+**4. Create a Pull request in the openstad/cms package if you want to change something directly in the core module:**
+Everyone is invited to contribute to the `@openstad/cms` core package. [contribute](/technical/contributing.md)

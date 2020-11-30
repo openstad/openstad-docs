@@ -1,4 +1,4 @@
-# Voorkeurspeiling
+# Voorkeurspeiling (Inrichten digitale tools)
 
 _Status: WIP_
 
@@ -18,6 +18,7 @@ Bij de voorbereiding van dit proces zijn de volgende how-to's relevant:
 Let op:
 * Zorg dat de verschillende voorstellen die je voorlegt goed met elkaar te vergelijken zijn.
 * Benadruk de verschillen tussen de voorgelegde voorstellen in beeld en/of tekst.
+* Let erop dat de verschillen groot genoeg zijn om werkelijk een keuze te zijn.
 
 ## Stemfase
 
