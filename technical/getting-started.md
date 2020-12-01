@@ -58,9 +58,7 @@ The following script install and fill all 3 databases:
 node install-databases.js
 ```
 
-Warning Currently this script will not do a good job if run twice, and will destroy a good running database. It will destroy and recreate the api tables and
-
-In case you want to run again, easiest is to manually delete all tables.
+Warning: currently this script is not safe to run twice and will fail. In case you want to run again, easiest is to manually delete all tables. 
 
 In case you get an error that password is not supported:
 
