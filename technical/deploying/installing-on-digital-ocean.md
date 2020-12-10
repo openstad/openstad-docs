@@ -254,11 +254,12 @@ kubectl exec -n openstad -it svc/openstad-image knex seed:run
 
 When everything went according to plan the base domain (for example www.amsterdam.openstad.org) should show a default empty openstad site.
 
-
-
 If you go to /oauth/login you should should get to a login screen where you can login with the token you set in the installations process.
 
-The admin panel is found with admin in front of the base: www.admin.amsterdam.openstad.org. The basic auth password is set in your values file. If e-mail is working we recommend switch the auth settings for your admin panel to e-mail.
+Note: this login token only works for the first site and admin panel, when creating new sites login via e-mail is necessary.
+
+The admin panel is found with admin in front of the base: www.admin.amsterdam.openstad.org, here you can create, copy and edit sites. The basic auth password is set in your values file. If e-mail is working we recommend switch the aehtentication method for your admin panel to e-mail.
+
 
 
 
