@@ -1,3 +1,5 @@
+# Installing openstad on Digital Ocean with Kubernetes
+
 Prerequisites (version matter!):
 
 - Kubectl (1 version within digital ocean cluster version). See [Kubectl installation.](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
@@ -65,25 +67,20 @@ Set the DNS records for following domains.
 
 - *domainname.com*
 - www.*domainname.com*
-- www.api.*domainname.com*
-- www.auth.*domainname.com*
-- www.admin.*domainname.com*
-- www.img.*domainname.com*
+- api.*domainname.com*
+- auth.*domainname.com*
+- admin.*domainname.com*
+- img.*domainname.com*
 
 Advantage of first setting up domains is that Let's Encrypt configures the SSL certificates immediately.
 
 The main domain will be redirect to the non www.
 
-If you have no domain, an alternative is xip.io which sends certain domain names automatically to your IP. For instance
-
-- www.api.*178.128.136.92.xip.io*
-- www.auth.*178.128.136.92.xip.io*
-
 For convenience sake we also advice adding a wildcard subdomain that users can use to create websites through the admin panel without having to create a DNS record every time. Cert manager will automatically generate an SSL cert. Something like this:
 
-- **.stem.denhaag.nl*
+- \*.*openstad.denhaag.nl*
 
-You can add this below in the custom-values.yml in order for the admin panel to display this in the frontend.
+You can add this as wildcardHost, only openstad.denhaag.nl without the asterisk, below in the custom-values.yml in order for the admin panel to display this to the users.
 
 ###5. Clone the Kubernetes Repository
 
@@ -110,7 +107,7 @@ host:
 ```
 
 - update custom mysql password,
-- Set the auth credentials, the firstLTokenLogin will allow you to login with the token into admin panel en first website. You can leave the rest empty, will be auto generated
+- Set the auth credentials, the firstLoginToken will allow you to login with the token into admin panel en first website. You can leave the rest empty, will be auto generated
 
     auth:
       dbName: auth
@@ -260,7 +257,7 @@ Note: this login token only works for the first site and admin panel, when creat
 
 The admin panel is found with admin in front of the base: www.admin.amsterdam.openstad.org, here you can create, copy and edit sites. The basic auth password is set in your values file. If e-mail is working we recommend switch the aehtentication method for your admin panel to e-mail.
 
-
+Every site has an /admin/login that allows for logging in with e-mail, this url also doesn't log you out. A normal login logs you out of every other site and the admin panel, if you login in as an admin you are allowed to be logged into multiple site at the same time.
 
 
 ## Some other commands
