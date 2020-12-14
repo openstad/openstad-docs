@@ -54,6 +54,12 @@ Create the MySQL databases manually, by default these are named in the .env file
 
 ## 7. Create and fill tables for the databases
 
+Install knex globally:
+
+```
+npm install knex -g
+```
+
 The following script install and fill all 3 databases:
 
 ```
