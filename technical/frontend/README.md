@@ -8,7 +8,7 @@ On of the main reasons ApostropheCMS was chosen because it easily allows for in 
 
 
 ## Multisite
-We have a custom implementation of ApostropheCMS multisite, this allows one installation to run multiple domains. As explainend in the architecture section this works together with the API and Kubernetes to make it all work. With every domain request the frontend server checks if the domain exists in cached config, if not present make a call to the Openstand API if such a domain exists, if yes it will create an express server if not it will return a 404
+We have a custom implementation of ApostropheCMS multisite, allowing for one installation to run multiple sites on different domains. As explainend in the architecture section this works together with the API and Kubernetes to make it all work. With every domain request the frontend server checks if the domain exists in cached config, if not present make a call to the Openstand API if such a domain exists, if yes it will create an express server if not it will return a 404
 
 ## ApostropheCMS documentation
 In ApostropheCMS almost everything is written as a module, found in a lib/modules folder, can be a widget hat can be displayed on a page, a custom page or any other of the possible extension of other ApostropheCMS functionality.

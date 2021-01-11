@@ -4,11 +4,11 @@
 All REST routes have pagination if the correct GET parameters are added to the URL on all GET list routes: Site, Idea, Article, Newslettersignup, Argument, Submission & Vote.
 The heavy lifting is done by express middleware.
 
-## Paginations parameters
+## Pagination parameters
 
-Als je een query param `page` meestuurt dan krijg je de resultaten gepagineerd terug. Optioneel kun je een parameter `pageSize` meesturen; die default naar 20.
+If a query param `page` is used the results will be returned in pages. Optionally a param `pageSize` can be used; this defaults to 20.
 
-In dit geval krijg je naast de eigenlijke resultaten nog een set metadata terug:
+The results will than be extended with some metadata:
 
 ```
 {
@@ -26,28 +26,28 @@ In dit geval krijg je naast de eigenlijke resultaten nog een set metadata terug:
     }
   },
   "records": [
-    ... de resultaten
+    ... the results
   ]
 }
 ```
 
-Het pagineren gebeurt in de database query. Een request op 20 records uit een tabel van 100000 zou dus best snel moeten zijn.
+Pagination is done in the database query. A request for 20 records from a table with 100000 should be fast.
 
-Maar...
+But...
 
-Zoeken werkt niet via de query; fuzzy SQL bestaat nog niet (nauwelijks). Zoeken werkt dus op de resultaten: hij haalt de 100000 records op en daarin wordt in de JS gezocht.
+Search does not use the query because fuzzy SQL does not/hardly exist. Search will therefore be done on the results: it will fetch all 100000 records and search those in JS.
 
-Pagineren kun je dan dus ook pas achteraf doen; pagineren en zoeken samen kan dus vrij duur zijn.
+Pagination can than only be done after the searching of course, so this might be quite expensive.
 
-## Zoeken
+## Search
 
-Zoekvragen stuur je mee als query paramter `search`. De zoekopdracht bouw je op als object in de url:
+Search requests are created with the query param `search`:
 
 ```
 ?search[text][criteria]=openstad&search[title][criteria]=goed&search[options][andOr]=and"
 ```
 
-Een npm module als ns zet nested object automatisch om naar een bovenstaande url.
+An npm module like ns will create an url like this form a nested js object.
 
 ```
 {
@@ -65,16 +65,12 @@ Een npm module als ns zet nested object automatisch om naar een bovenstaande url
 }
 ```
 
-Je kunt momenteel zoeken in `titel`, `summary` en `description`. Met `text` zoek je in alle drie.
+Currently searches are recognized for `title`, `summary` en `description`. The value `text` will search in all three of these.
 
-`andOr` spreek voor zich lijkt me.
+`andOr` should be self explanatory.
 
-Het lijkt misschien een beetje overkill, maar de idee is dat we op deze manier heel eenvoudig veel uitgebruidere zoekopdrachten kunt toevoegen.
+It may seem like overkill, but this way it should be really simple to add new ways of searching.
 
-Het zoeken zelf gebeurd door een module [fuzzysort](https://github.com/farzher/fuzzysort). Die geeft een score aan de gevonden waarden.
-Je resultaten worden gesorteerd op die score; een arbitraire hardcoded minimum score bepaalt of je een resultaat uberhaubt terug krijgt.
+Searching itself is done by a module [fuzzysort](https://github.com/farzher/fuzzysort). This module adds scores to found values.
+The results are sorted on thsi score; a hardcoded arbitrairy minimum value determines if a result is included.
 
-## TODO
-- Testen fuzzy search: voldoet dit?
-- Bepalen van de minimum score om in de resultaten terrecht te komen; wellicht configureerbaar.
-- Meer zoekopties, waarschijnlijk ook dingen als zoeken op tags

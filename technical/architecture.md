@@ -9,18 +9,19 @@ The Frontend can manage multiple sites, it automatically creates ApostropheCMS e
 
 1.1 A standard request comes into the frontend, then the frontend server checks if the domain is known in it's memory.
 
-2.1 If yes it makes a call to the API to see if user is logged in and then serves the request domain and page. 
+2.1 If no then it will make a call to the API to see if the domain exists in the application.
 
-2.2 If no  then it will make a call to the API to see if the domain exists in the application.
+2.2 If no configuration for that domain is found a 404 page is served.
 
-3.1 If no configuration for that domain is found a 404 page is served.
+2.3 If the domain is known the Frontend server gets the configuration returned for the site, checks if the mongob database exists and continues.
 
-3.2 If the domain is known the Frontend server gets the configuration returned for the site, checks if the mongob database exists and serves the site.
+3.1 It makes a call to the API to see if user is logged in and then serves the request domain and page. 
 
 ## NodeJS servers
 
 ### Frontend server: ApostropheCMS
-The frontend is built with the [ApostropheCMS](https://docs.apostrophecms.org/). ApostropheCMS allows for highly flexible pages. Enabling the UX & designers to build complete websites from the ground. Laying the foundation for a flexible system that allows for simple voting websites to complex participatory budgeting websites.  
+
+The frontend is built with the [ApostropheCMS](https://docs.apostrophecms.org/). ApostropheCMS allows for highly flexible pages. Enabling the UX & designers to build complete websites from the ground up. Laying the foundation for a flexible system that allows for anything from simple voting websites to complex participatory budgeting websites.  
 
 On top of the core of ApostropheCMS we have integrated and developed the Openstad (open city) functionality of submitting ideas, voting, participatory budgeting, arguments and more.
 
