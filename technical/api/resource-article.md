@@ -1,10 +1,10 @@
 # Article
 
-## Inhoud
-[Endpoints](#endpoints)
-[ExtraData - zie Idea](/doc/idea#extradata)
+## Content
+- [Endpoints](#endpoints)
+- [ExtraData - zie Idea](/doc/idea#extradata)
 
-Article is a basic rest object that allows for creating blogs or news pages. It's currently mostly used by the moderators, but could also be used by "normal" users. It's very similar to the Idea
+Article is a basic rest object that allows for creating blogs or news pages. It's currently mostly used by the moderators, but could also be used by "normal" users. It's very similar to the Idea model, but arguments and votes are not implemented for articles. 
 
 ## Endpoints
 
@@ -34,8 +34,3 @@ Following GET parameters are available:
 
 ExtraData is similar to ideas:- [read more](/technical/api/idea#extradata)
 
-
-
-## Todo
-
-Arguments and votes are currently not implemented for articles. 

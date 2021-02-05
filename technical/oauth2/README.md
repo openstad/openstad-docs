@@ -17,7 +17,7 @@ If admin of admin panel has access to all data available in the panel.
 | Editor    | Full rights to all user data and site content of the specific site. |
 | Moderator | Full rights to all user data, no access to managing site content. |
 | Member    | Rights to it's own data and content                          |
-| Anonymous | No user data, for some application liking without logging in. |
+| Anonymous | Minimal user data, for some application liking without logging in. |
 
 
 

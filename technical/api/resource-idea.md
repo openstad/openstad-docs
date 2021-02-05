@@ -1,9 +1,9 @@
 # Idea
 
-## Inhoud
-[Endpoints](#endpoints)
-[ExtraData](#extradata)
-[ToDo](#todo)
+## Content
+- [Endpoints](#endpoints)
+- [ExtraData](#extradata)
+- [ToDo](#todo)
 
 ## Endpoints
 
@@ -28,7 +28,6 @@ To include more data there are a few get parameters available:
 
 `selectRunning`
 `includeArguments`
-`includeMeeting`
 `includePosterImage`
 `includeUser`
 `includeVoteCount`
@@ -45,9 +44,9 @@ Supported field types:
 `enum`
 `object`
 
-Object is een special geval; dat verondersteld een subset van definities (zie voorbeeld). Die worden dan recursief gechecked.
+Object is a special case; it requires a subset of definitions (see example). These will be checked recursively.
 
-Het verwijderen van velden doe je door ze mee te sturen met de waarde `null`.
+Removing fields is done by sending them with value `null`.
 
 #### extraDataMustBeDefined
 

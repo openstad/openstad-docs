@@ -70,12 +70,12 @@ This allows for specific implementations and for non-default actions; see [_over
 If that function is not defined the role is automagically checked on the Models settings.
 
 ### authorizeData
-```authorizeData(action, data, user)```
-filter the incoming data against the users action rights
+`authorizeData(action, data, user)`
+Filter the incoming data against the users action rights
 
 ### toAuthorizedJSON
-```toJSON(user)```
-Overwrites the default toJSON. Will return a JSON abject that contains only the fields that this user can view.
+`toJSON(user)`
+Overwrites the default toJSON. Will return a JSON object that contains only the fields that this user can view.
 
 Add a viewableBy entry to the model nd/or field definition to make this work.
 
@@ -83,13 +83,13 @@ Add a viewableBy entry to the model nd/or field definition to make this work.
 
 For convenience these functions exist as express middleware.
 
-```can(modelname, action)```
+`can(modelname, action)`
 Will call the can function on the model with the content of `req.user` as the user.
 
-```useReqUser```
+`useReqUser()`
 Will add `req.user` as the user to all instances in `req.results`. This will then be used by `can` and `toJSON` to validate
 
-```toAuthorizedJSON```
+`toAuthorizedJSON`
 Will call the toViewableJSON function on all insances in `req.results` with the content of `req.user` as the user.
 I think I will remove this middleware
 
@@ -107,7 +107,7 @@ Argument.auth = Argument.prototype.auth = {
 }
 ```
 
-On a field the function authorizeData is used by Model.authorizeData() and model.toAuthorizedJSON(). The OpenStad Ecosystem uses this for Idea.extraData.
+On a field the function authorizeData is used by Model.authorizeData() and model.toAuthorizedJSON(). The OpenStad Ecosystem uses this override for Idea.extraData.
 
 ```
 title: {
