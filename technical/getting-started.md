@@ -14,15 +14,15 @@ We've bundled our 5 nodejs servers in one git repo openstad-app with git submodu
 
 https://github.com/Amsterdam/openstad-app
 
-After checking out the repo, the git submodules need to be pulled seperately, this is one way of doing that:
+After checking out the repo, the git submodules need to be pulled separately, this is one way of doing that:
 
 ```
 git submodule update --init --recursive
 ```
 
-After this you will see 5 directory, these all container autonomous node servers. These can be run and managed seperetaly, but it's easier to use the scripts provided in the root level. 
+After this you will see 5 directory, these all container autonomous node servers. These can be run and managed separately, but it's easier to use the scripts provided in the root level. 
 
-It might however be useful for debugging purposes to run them seperately every now and then, in this case the values from app.js should be copied to the .env of the server you are trying to run (the root file in the .env uses different keys).
+It might however be useful for debugging purposes to run them separately every now and then, in this case the values from app.js should be copied to the .env of the server you are trying to run (the root file in the .env uses different keys).
 
 ## 2. Create an .env file
 
@@ -74,7 +74,7 @@ In case you get an error that password is not supported:
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
 ```
 
-If you are runnning a version of MySQL above version 5 then you will most likely get the following error:
+If you are running a version of MySQL above version 5 then you will most likely get the following error:
 
 ```
 Unhandled rejection SequelizeDatabaseError: FUNCTION api_test_script.GeomFromText does not exist

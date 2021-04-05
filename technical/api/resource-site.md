@@ -15,11 +15,11 @@ update one site
 `DELETE /api/site/:SITE_ID`
 delete one site
 
-GET request are public, certain config data is excluded publically. The post, put and delete are all admin only.
+GET request are public, certain config data is excluded publicly. The post, put and delete are all admin only.
 
 #### Site config
 
-One of the crucial aspects of the Site is it's config option, it is saved in a JSON column. The site configuration for how site should handle voting, ideas, argumentes, domains, what Database CMS uses, if Basic Auth is turned and and more.
+One of the crucial aspects of the Site is it's config option, it is saved in a JSON column. The site configuration for how site should handle voting, ideas, arguments, domains, what Database CMS uses, if Basic Auth is turned and and more.
 
 This is the current default configuration:
 
