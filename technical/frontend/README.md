@@ -15,7 +15,6 @@ In ApostropheCMS almost everything is written as a module, found in a lib/module
 
 The documentation of ApostropheCMS is comprehensive and good place to start if you want to create your own modules: http://apostrophecms.org/.
 
-
 ## The Openstad version of ApostropheCMS
 We have bundled the ApostropheCMS as an Openstad CMS local npm package. This package lives in the packages/cms folder and the modules are overrideable just like ApostropheCMS modules. Create the files you want to override directly under lib/modules.
 
@@ -113,3 +112,10 @@ For more information please refer to the Apostrophe documentation: https://docs.
 
 **4. Create a Pull request in the openstad/cms package if you want to change something directly in the core module:**
 Everyone is invited to contribute to the `@openstad/cms` core package. [contribute](/technical/contributing.md)
+
+## Using openstad-components
+
+The openstad-components are published automagically. See the components documentation for more information on that.
+
+The CMS automagically determines which version to use. It does this by asking npm what the latest published version is for the current branch (development, release or master), and then loading that published version from cdn.jsdelivr.net/npm
+
