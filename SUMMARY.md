@@ -76,6 +76,8 @@
     * [Deploying a custom image](technical/deploying/deploying-a-custom-container.md)
   * [Frontend: CMS](technical/frontend/README.md)
   * [Frontend: Components](technical/components/README.md)
+    * [Use and configuration](technical/components/use.md)
+    * [Publishing](technical/components/publishing.md)
   * [Api](technical/api/README.md)
     * [Site](technical/api/resource-site.md)
     * [Idea](technical/api/resource-idea.md)
