@@ -78,6 +78,8 @@
   * [Frontend: Components](technical/components/README.md)
     * [Use and configuration](technical/components/use.md)
     * [Publishing](technical/components/publishing.md)
+    * [Components](technical/components/components.md)
+      * [Choices Guide](technical/components/choices-guide.md)
   * [Api](technical/api/README.md)
     * [Site](technical/api/resource-site.md)
     * [Idea](technical/api/resource-idea.md)
