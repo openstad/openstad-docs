@@ -87,6 +87,7 @@
     * [Vote](technical/api/resource-vote.md)
     * [Article](technical/api/resource-article.md)
     * [Newsletter Signup](technical/api/resource-newslettersignup.md)
+    * [User](technical/api/resource-user.md)
     * [Auth](technical/api/auth.md)
     * [Resource & Data permissions](technical/api/sequelize-authorization.md)
     * [Pagination and search](technical/api/pagination-and-search.md)
