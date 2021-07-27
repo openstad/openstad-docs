@@ -8,19 +8,19 @@ Article is a basic rest object that allows for creating blogs or news pages. It'
 
 ## Endpoints
 
-`GET /api/site/:SITE_ID/article/`
+`GET /api/site/:SITE_ID/article/`  
 list all articles
 
-`POST /api/site/:SITE_ID/article/`
+`POST /api/site/:SITE_ID/article/`  
 create an article
 
-`GET /api/site/:SITE_ID/article/:ARTICLE_ID`
+`GET /api/site/:SITE_ID/article/:ARTICLE_ID`  
 view one article
 
-`PUT /api/site/:SITE_ID/article/:ARTICLE_ID`
+`PUT /api/site/:SITE_ID/article/:ARTICLE_ID`  
 update one article
 
-`DELETE /api/site/:SITE_ID/article/:ARTICLE_ID`
+`DELETE /api/site/:SITE_ID/article/:ARTICLE_ID`  
 delete one article
 
 GET requests are public, POST only available for moderators and owners
