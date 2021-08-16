@@ -58,9 +58,9 @@ Create the MySQL databases manually, by default these are named in the .env file
 
 ```
 mysql
-CREATE TABLE image
-CREATE TABLE api
-CREATE TABLE auth
+CREATE DATABASE image;
+CREATE DATABASE api;
+CREATE DATABASE auth;
 ```
 
 
