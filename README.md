@@ -4,7 +4,7 @@ The Openstad software allows for different e-democracy websites to be created & 
 
 ![Westbegroot screenshot](/img/westbegroot-screenshot.png)
 
-Initially the software was developed in Amsterdam. It's currently actively used in Amsterdam & Den Haag. And soon also Haarlem, Utrecht & Alphen aan de Rein will go live with Participatory budget sites built with Openstad.
+Initially the software was developed in Amsterdam. It's currently actively used in Amsterdam & Den Haag. And soon also Haarlem, Utrecht & Alphen aan den Rijn will go live with Participatory budget sites built with Openstad.
 
 The ecosystem contains a CMS & sitebuilder that allows for pages to be build from scratch, an API and an admin panel that allows for multiple sites be created, copied and managed.
 
