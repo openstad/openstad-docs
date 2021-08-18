@@ -17,6 +17,41 @@ delete one site
 
 GET request are public, certain config data is excluded publicly. The post, put and delete are all admin only.
 
+## Anonymize all users for a site
+
+New endpoints:
+
+`PUT /api/site/:SITE_ID/will-anonymize-all-users`
+`PUT /api/site/:SITE_ID/do-anonymize-all-users`
+Anonymize all users for one site.
+
+Only available to admins
+`site.config.projectHasEnded` must be `true`
+Administrators will not be anonymized.
+
+Returns
+- a list of users that will be / have been anonymized
+- a list of admins that will not be / have not been anonymized
+
+### Project has ended
+
+projectHasEnded is a new site.config param. This param is available through the React Admin.
+
+Setting this parameter will also update a range of ther settings:
+```
+config.votes.isActive = false;
+config.ideas.canAddNewIdeas = false;
+config.articles.canAddNewArticles = false;
+config.arguments.isClosed = true;
+config.polls.canAddPolls = false;
+config.users.canCreateNewUsers = false;
+```
+
+This now works one way: setting the projectHasEnded will set the above parameters. Unsetting it will _not_ update these parameters.
+
+If settings do not match the projectHasEnded settings a warning is given
+
+
 #### Site config
 
 One of the crucial aspects of the Site is it's config option, it is saved in a JSON column. The site configuration for how site should handle voting, ideas, arguments, domains, what Database CMS uses, if Basic Auth is turned and and more.
@@ -276,4 +311,5 @@ This is the current default configuration:
   }
 }
 ```
+
 
