@@ -18,7 +18,7 @@ Tijdens de indienfase worden bewoners van een bepaald gebied uitgenodigd om idee
 
 ### Voorbereiding indienfase 
 
-Maak in het admin-panel [TODO link toevoegen] een nieuwe lege website aan en volg onderstaande how-to's om deze te vullen, of begin te werken vanuit een website waar de basisfunctionaliteit al werkt: [TODO toevoegen hoe en wat].
+Maak in het [adminpanel](/manual/miscellaneous/adminpanel.md) een nieuwe lege website aan en volg onderstaande how-to's om deze te vullen, of begin te werken vanuit een website waar de basisfunctionaliteit al werkt: [TODO toevoegen hoe en wat].
 
 Voor het begin van deze fase zijn de volgende how-to's relevant:
 

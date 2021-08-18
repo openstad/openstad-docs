@@ -1,13 +1,8 @@
 # Voorkeurspeiling (Inrichten digitale tools)
 
-_Status: WIP_
-
 De voorkeurspeiling kan ingezet worden om de voorkeur van bewoners op te halen tussen verschillende voorstellen. Dit kan in principe vanalles zijn, maar in de praktijk wordt dit vaak ingezet om te kiezen tussen verschillende ontwerpen voor de herinrichting van de openbare ruimte.
 
-Voorbeelden van het 'voorkeurspeiling'-proces zijn te vinden onder de 'Use cases' op OpenStad.org. [TODO link naar het use cases overzicht toevoegen, en mogelijk hieronder een opsomming van specifieke use cases]
-
 ## Voorbereiding
-[TODO beschrijving]
 
 Bij de voorbereiding van dit proces zijn de volgende how-to's relevant:
 * [Plannen indienen](../manual/how-tos/upload-ideas.md) - lees hoe je als [moderator of admin](../manual/miscellaneous/roles.md) plannen in de database kunt zetten. Het is niet relevant om het voor bewoners mogelijk te maken om voorstellen/plannen in te kunnen dienen.
