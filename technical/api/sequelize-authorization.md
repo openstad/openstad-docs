@@ -90,7 +90,7 @@ Will call the can function on the model with the content of `req.user` as the us
 Will add `req.user` as the user to all instances in `req.results`. This will then be used by `can` and `toJSON` to validate
 
 `toAuthorizedJSON`
-Will call the toViewableJSON function on all insances in `req.results` with the content of `req.user` as the user.
+Will call the toViewableJSON function on all instances in `req.results` with the content of `req.user` as the user.
 I think I will remove this middleware
 
 ## Overwrites

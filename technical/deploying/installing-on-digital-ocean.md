@@ -13,7 +13,7 @@ Main commands are kubectl and helm.
 
 Select at least 3 nodes for a development cluster. Creating will take a few minutes.
 
-For a smaller and development installation site the default 3 nodes of $20,- per node will do. For most production environments at least 3 nodes of 40,- per months are advised, which should give 3*8GB ram and 3 * 4 CPU. Note that the default resources allocated to a pod is set low in the values.yml, so if you get a bigger machine add higher resouce limits. Mainly the frontend pod could use more CPU, the image server every now and then uses a lot of memory when many images gets resized at once.
+For a smaller and development installation site the default 3 nodes of $20,- per node will do. For most production environments at least 3 nodes of 40,- per months are advised, which should give 3*8GB ram and 3 * 4 CPU. Note that the default resources allocated to a pod is set low in the values.yml, so if you get a bigger machine add higher resource limits. Mainly the frontend pod could use more CPU, the image server every now and then uses a lot of memory when many images gets resized at once.
 
 ### 2. Add Config of cluster to your local machine
 
@@ -130,7 +130,7 @@ host:
 - check which containers are set, *latest one currently is v0.7.* (17-10-2020)*
 - Check resources, if possible add more memory and cpu to Frontend, API and Image server.
 - Set wildcard host, see previous step, for admin deployment for easy site creation: *wildcardHost*.
-- Preferrably set mail server for sending emails, but will work without on first install, so can be added later.
+- Preferably set mail server for sending emails, but will work without on first install, so can be added later.
 ```
 ### Mail server secretes
 mail:
@@ -213,7 +213,7 @@ helm upgrade  -f custom-values.yaml openstad . -n openstad
 
 ## 10. Mysql Table creation & seeding
 
-At the moment table creation and seeding has to be done manual. There are some automatic jobs being developed to automate this proces, but for now  easiest and most stable is to run the migrations directly in the pods.
+At the moment table creation and seeding has to be done manual. There are some automatic jobs being developed to automate this process, but for now  easiest and most stable is to run the migrations directly in the pods.
 
 1.1 Create the api site entries (runs both basic migrations and seeds.). This seed run will empty the tables, so don't use once running.
 
@@ -255,14 +255,14 @@ If you go to /oauth/login you should should get to a login screen where you can 
 
 Note: this login token only works for the first site and admin panel, when creating new sites login via e-mail is necessary.
 
-The admin panel is found with admin in front of the base: www.admin.amsterdam.openstad.org, here you can create, copy and edit sites. The basic auth password is set in your values file. If e-mail is working we recommend switch the aehtentication method for your admin panel to e-mail.
+The admin panel is found with admin in front of the base: www.admin.amsterdam.openstad.org, here you can create, copy and edit sites. The basic auth password is set in your values file. If e-mail is working we recommend switch the authentication method for your admin panel to e-mail.
 
 Every site has an /admin/login that allows for logging in with e-mail, this url also doesn't log you out. A normal login logs you out of every other site and the admin panel, if you login in as an admin you are allowed to be logged into multiple site at the same time.
 
 
 ## Some other commands
 
-For logging these commands are usefull, describe gives info like env values, logs gives the logs of the pod
+For logging these commands are useful, describe gives info like env values, logs gives the logs of the pod
 
 ```
 kubectl logs [podname] -n openstad

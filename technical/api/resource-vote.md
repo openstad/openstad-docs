@@ -22,7 +22,7 @@ If allowed by the parameter`config.votes.withExisting` voteType 'count' or 'budg
 
 The vote types *like* works as a toggle. Likes can have a positive, yes, and a negative, no, sentiment.
 
-One voting round can be done on multiple ideas, if the user the votes again all previous votes for ideas are cancelled, or depending on the settins an error is thrown:
+One voting round can be done on multiple ideas, if the user the votes again all previous votes for ideas are cancelled, or depending on the settings an error is thrown:
 
 ```
 [
@@ -60,9 +60,9 @@ Or a vote on 1 idea
 
 There are a multiple voting scenario's for different types of websites
 
-- Submitting ideas website: people can submit ideas, and for every idea on the site it's possible to like positivily or negatively. Voting the same sentiment cancels the vote, voting other sentiment cancels the vote and creates a new one
-- Participitory budgetting: for budgetting site one vote is on multiple ideas within a set budget. So for instance there is 200.000 worth of budget then the users can select as many ideas as possible within that budget and make a vote on all of them
-- Multiple votes: able to vote on a min and max amout of ideas
+- Submitting ideas website: people can submit ideas, and for every idea on the site it's possible to like positively or negatively. Voting the same sentiment cancels the vote, voting other sentiment cancels the vote and creates a new one
+- Participatory budgeting: for budgeting site one vote is on multiple ideas within a set budget. So for instance there is 200.000 worth of budget then the users can select as many ideas as possible within that budget and make a vote on all of them
+- Multiple votes: able to vote on a min and max amount of ideas
 - Voting on an art or garden competition: max vote on one idea, but changeable
 - Eberhard art project: max 1 vote, throw error on attempt to change
 
@@ -103,7 +103,7 @@ For the vote type budgeting the min and max budget that the user is allowed to v
 
 #### Example configuration
 
-Submitting ideas fase:
+Submitting ideas phase:
 
 ```
 {
@@ -114,7 +114,7 @@ Submitting ideas fase:
 }
 ```
 
-Participitory budgetting:
+Participatory budgeting:
 
 ```
 {

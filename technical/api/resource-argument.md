@@ -9,7 +9,7 @@ list all arguments for one idea
 `GET /api/site/:SITE_ID/idea/:IDEA_ID/argument?sentiment=for?sentiment=for&withUserVote=1&withVoteCount=1`
 list all arguments for one idea where sentiment is 'for'
 include the number of votes on this argument
-include whether or not the current userr has voted
+include whether or not the current user has voted
 
 `GET /api/site/:SITE_ID/idea/:IDEA_ID/argument/:ARG_ID`
 view one argument

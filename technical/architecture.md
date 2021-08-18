@@ -81,6 +81,6 @@ This means user submitted data, like argument,  goes to the Openstad REST API wh
 
 The frontend application is managed by ApostropheCMS, but to prevent confusion ApostropheCMS is not the frontend framework we use. 
 
-For new JS applications React.js is used. We load it into the frontend via a CDN, for instance via the JS delivery CDN. Often it's wrapped in an ApostropheCMS module which allows for the benefitis of easy management of configuration and loading into every application.
+For new JS applications React.js is used. We load it into the frontend via a CDN, for instance via the JS delivery CDN. Often it's wrapped in an ApostropheCMS module which allows for the benefits of easy management of configuration and loading into every application.
 
 JQuery is used by ApostopheCMS 2. And there are some old jQuery scripts from the openstad code base, the important ones, like voting will be moved to react.js in the future. Simple site enhancements, like alerts, will stay in jQuery for now.

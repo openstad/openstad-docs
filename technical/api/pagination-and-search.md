@@ -72,5 +72,5 @@ Currently searches are recognized for `title`, `summary` en `description`. The v
 It may seem like overkill, but this way it should be really simple to add new ways of searching.
 
 Searching itself is done by a module [fuzzysort](https://github.com/farzher/fuzzysort). This module adds scores to found values.
-The results are sorted on thsi score; a hardcoded arbitrairy minimum value determines if a result is included.
+The results are sorted on this score; a hardcoded arbitrary minimum value determines if a result is included.
 

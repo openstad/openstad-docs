@@ -1,5 +1,5 @@
 # Openstad Frontend
-The openstad frontend is primarly built upon the ApostropheCMS, there are also a few react application that are run as modules inside ApostropheCMS.
+The Openstad frontend is built upon the ApostropheCMS, there are also a few react application that are run as modules inside ApostropheCMS.
 
 The main repo is found here: https://github.com/Amsterdam/openstad-frontend
 
@@ -8,16 +8,15 @@ On of the main reasons ApostropheCMS was chosen because it easily allows for in 
 
 
 ## Multisite
-We have a custom implementation of ApostropheCMS multisite, allowing for one installation to run multiple sites on different domains. As explainend in the architecture section this works together with the API and Kubernetes to make it all work. With every domain request the frontend server checks if the domain exists in cached config, if not present make a call to the Openstand API if such a domain exists, if yes it will create an express server if not it will return a 404
+We have a custom implementation of ApostropheCMS multisite, allowing for one installation to run multiple sites on different domains. As explained in the architecture section this works together with the API and Kubernetes to make it all work. With every domain request the frontend server checks if the domain exists in cached config, if not present make a call to the Openstad API if such a domain exists, if yes it will create an express server if not it will return a 404
 
 ## ApostropheCMS documentation
 In ApostropheCMS almost everything is written as a module, found in a lib/modules folder, can be a widget hat can be displayed on a page, a custom page or any other of the possible extension of other ApostropheCMS functionality.
 
 The documentation of ApostropheCMS is comprehensive and good place to start if you want to create your own modules: http://apostrophecms.org/.
 
-
 ## The Openstad version of ApostropheCMS
-We have bundled the ApostropheCMS as an Openstad CMS local npm pacakage. This package lives in the packages/cms folder and the modules are overrideable just like ApostropheCMS modules. Create the files you want to override directly under lib/modules.
+We have bundled the ApostropheCMS as an Openstad CMS local npm package. This package lives in the packages/cms folder and the modules are overrideable just like ApostropheCMS modules. Create the files you want to override directly under lib/modules.
 
 This is a core feature of the ApostropheCMS and because of the way we bundled it works for both the ApostropheCMS modules and the Openstad modules. [ApostropheCms module pattern](https://docs.apostrophecms.org/core-concepts/technical-overview.html#apostrophe-s-module-pattern-inheritance-and-moog)
 
@@ -113,3 +112,10 @@ For more information please refer to the Apostrophe documentation: https://docs.
 
 **4. Create a Pull request in the openstad/cms package if you want to change something directly in the core module:**
 Everyone is invited to contribute to the `@openstad/cms` core package. [contribute](/technical/contributing.md)
+
+## Using openstad-components
+
+The openstad-components are published automagically. See the components documentation for more information on that.
+
+The CMS automagically determines which version to use. It does this by asking npm what the latest published version is for the current branch (development, release or master), and then loading that published version from cdn.jsdelivr.net/npm
+

@@ -3,7 +3,7 @@ In case you might want to deploy your own docker image of on our more of the ser
 
 
 
-Most likely the custom image will be a version of the Frontend. So for insance in your values yaml overwrite the name of the image:
+Most likely the custom image will be a version of the Frontend. So for instance in your values yaml overwrite the name of the image:
 ```
 frontend:
   # Deployment container is what is eventually run in the pod

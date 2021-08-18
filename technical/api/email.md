@@ -40,9 +40,9 @@ Template uses the nunjucks templating engine, the following variables are availa
 
 ## Notifications to Moderators
 
-Notifications can be send to moderators to let them know if ideas and argumens have been created or edited on their site.
+Notifications can be send to moderators to let them know if ideas and arguments have been created or edited on their site.
 
-The e-mail template is also configrable per site:
+The e-mail template is also configurable per site:
 
 ```
 {
