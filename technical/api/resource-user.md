@@ -43,8 +43,6 @@ If none of these is defined then all are true(!)
 Example:  
 `GET :HOSTNAME/api/site/:SITE_ID/user/:USER_ID/activity?includeOtherSites=0&includeIdeas=1&includeVotes=1`  
 
-
-
 ## Anonymize user andpoints
 
 ```
@@ -61,6 +59,13 @@ do-anonymize will
 - remove the user from the oauth server if this user does not exist on any other site
 
 do-anonymizeall will do this for this user on all sites.
+
+To limit 'all' to less then 'all' send a list in the body:
+```
+{
+  "onlyUserIds": [10, 12]
+}
+```
 
 will-anonymize(all) returns a list of
 - ideas and arguments that will be anonymized
