@@ -13,7 +13,7 @@ De ‘interactieve kaart’-widget kan onder andere op de volgende manieren inge
 De indeling van de ‘interactieve kaart’-widget bestaat uit 3 hoofdonderdelen:
 
 * **Kaart (C)** - aan de rechterkant wordt de kaart getoond, met daarop de punten die vooraf zijn ingeladen, of door gebruikers zijn geplaatst.
-* **Contentvlak (B)** - aan de linkerkant wordt de geplaatste content getoond. De exacte invulling hiervan hangt af van de weergave, zie hieronder.
+* **Contentvlak (B)** - het contentvlak aan de linkerkant bestaat uit twee onderdelen. Bovenaan het selectievlak met grijze achtergrond (B1), welke meer informatie geeft over een geselecteerde locatie of inzending. Er onder een lijstweergave met inzendingen (B2). Zie hieronder [#verschillende-weergaves](interactieve-kaart.md#verschillende-weergaves "mention") voor meer informatie over de inhoud van het selectievlak en de lijstweergave in verschillende omstandigheden.
 * **Zoek- en filterbalk (A)** - uitgestrekt bovenaan de lijst- en kaartweergave bevindt zich in de overzichtsweergave een grijze balk met daarin optioneel een zoekveld, filter-dropdown en een knop om alle punten op de kaart weer in beeld te krijgen.
 
 Hierboven is de lay-out op brede schermen beschreven, zoals desktop en tablet. Op smallere schermen, zoals mobiel, wordt óf de kaart óf het contentvlak op de volle breedte van het scherm getoond.
