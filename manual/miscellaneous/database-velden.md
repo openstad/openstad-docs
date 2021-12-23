@@ -1,7 +1,7 @@
 # Database velden
 
 {% hint style="info" %}
-Sommige database velden beginnen met extraData. . Je bent zelf vrij om hier eigen velden aan toe te voegen. Deze data is niet zorgvuldig afgeschermd, dus zorg dat je dit niet gebruikt voor gevoelige informatie zoals persoonsgegevens.
+Sommige database velden beginnen met `extraData.` . Je bent zelf vrij om hier eigen velden aan toe te voegen. Let wel op: deze data is **niet** zorgvuldig afgeschermd, dus zorg dat je dit niet gebruikt voor gevoelige informatie zoals persoonsgegevens.
 {% endhint %}
 
 | Database veld        | Toelichting                | Voorbeeld                                                              |
