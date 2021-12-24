@@ -46,7 +46,9 @@ Om de interactieve kaart in te kunnen zetten op een website, is het belangrijk d
 
 Zoals elke widget, wordt ook de kaart geplaatst in een _column section_. Het is in het geval van de kaart belangrijk dat de volgende instellingen van de column section goed ingesteld zijn:
 
-* **Columns**: Full screen (vertical & horizontal)
+| Instelling | Waarde                              |
+| ---------- | ----------------------------------- |
+| Columns    | Full screen (vertical & horizontal) |
 
 {% content-ref url="../modules/section-columns.md" %}
 [section-columns.md](../modules/section-columns.md)
@@ -56,8 +58,10 @@ Zoals elke widget, wordt ook de kaart geplaatst in een _column section_. Het is 
 
 In combinatie met de 'full screen'-instelling van de column section, is het ook belangrijk dat de cookiebar gefixeerd onderaan de pagina getoond wordt. Zorg dat in de _Page Settings_ van de pagina waarop je de kaart plaatst, het volgende staat ingesteld:
 
-* **Hide the footer?**: Yes
-* **Set the cookiebar fixed at the footer?**: Yes
+| Instelling                             | Waarde |
+| -------------------------------------- | ------ |
+| Hide the footer?                       | Yes    |
+| Set the cookiebar fixed at the footer? | Yes    |
 
 {% content-ref url="../miscellaneous/page-settings.md" %}
 [page-settings.md](../miscellaneous/page-settings.md)
