@@ -12,11 +12,9 @@ Als de pagina nog helemaal leeg is, dan verschijnt er vanzelf een ‘+’-icoont
 
 Klik op het ‘+’-icoontje en kies voor _Add a section_. Er verschijnt nu een pop-up scherm getiteld _Column Section_. Er zijn hier verschillende dingen in te stellen, maar de belangrijkste is het onderdeel _Columns_. Hieronder kies je het aantal en de procentuele verdeling van de breedte van de kolommen die in de section geplaatst worden. Daarnaast kun je hier ook eventueel een achtergrondkleur of een achtergrondafbeelding kiezen.
 
-```
-<source src="/video/add-section.mp4" type="video/mp4">
+{% embed url="https://cdn.jsdelivr.net/gh/Amsterdam/openstad-docs/video/add-section.mp4" %}
 
-Sorry, your browser doesn't support embedded videos.
-```
+
 
 ## Widgets
 
