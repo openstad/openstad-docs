@@ -6,8 +6,4 @@ Als je een pagina bewerkt hebt, dan verschijnt er linksonder naast de _Live/Draf
 
 Eén van de grote voordelen van het gebruik van versiebeheer is dat je gemakkelijk terug kunt keren naar een eerdere versie/momentopname van de pagina. Dit kan bijvoorbeeld handig zijn als je per ongeluk verkeerde wijzigingen hebt gemaakt of widgets hebt verwijderd waarvan je later toch spijt hebt. Hoe dit precies werkt wordt verderop in de documentatie uitgelegd.
 
-```
-<source src="/video/version-control.mp4" type="video/mp4">
-
-Sorry, your browser doesn't support embedded videos.
-```
+{% embed url="https://cdn.jsdelivr.net/gh/Amsterdam/openstad-docs/video/version-control.mp4" %}

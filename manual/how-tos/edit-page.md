@@ -28,11 +28,7 @@ Als een kolom nog leeg is verschijnt er vanzelf een ‘+’-icoontje, als er wel
 
 Als je op het ‘+’-icoontje klikt, verschijnt er een menuutje met alle beschikbare widgets. Als je een widget kiest, zal er eerst een pop-up verschijnen waar je de instellingen van de gekozen widget kunt bepalen. Vervolgens klik je rechtsboven op _Save \[...]_ om de widget met de gekozen instellingen toe te voegen. Een uitzondering hierop is de _Rich Text_-widget (broodtekst), deze wordt direct aan de pagina toegevoegd en bewerk je op de pagina zelf in plaats van in een pop-up (_in-context editing_).
 
-```
-<source src="/video/add-widget.mp4" type="video/mp4">
-
-Sorry, your browser doesn't support embedded videos.
-```
+{% embed url="https://cdn.jsdelivr.net/gh/Amsterdam/openstad-docs/video/add-widget.mp4" %}
 
 ## Aanpassen en verwijderen
 
@@ -47,45 +43,16 @@ Widgets op de pagina zijn aan te passen via het mouseover-menu. Beweeg de muisaa
 
 De eerste drie opties kunnen gebruikt worden om de positie van de widget te veranderen. Door op de tweede en derde knop te klikken verplaats je de widget respectievelijk naar boven en naar beneden, maar dit werkt alleen binnen een kolom, je kunt op deze manier niet een widget van de ene naar de andere kolom verplaatsen.
 
-\
-
-
-```
-<source src="/video/move-widget-buttons.mp4" type="video/mp4">
-
-Sorry, your browser doesn't support embedded videos.
-```
-
-\
+{% embed url="https://cdn.jsdelivr.net/gh/Amsterdam/openstad-docs/video/move-widget-buttons.mp4" %}
 
 
 Als je de eerste knop met de muis ingedrukt houdt, dan kun je de widget door te slepen op een andere locatie plaatsen. Terwijl je aan het slepen bent dan zie je op de pagina omlijnde gebieden verschijnen, welke aangeven dat je de widget op die plek los kunt laten. Op deze manier kun je widgets ook van de ene kolom naar de andere kolom verplaatsen.
 
-\
-
-
-```
-<source src="/video/move-widget-dragdrop.mp4" type="video/mp4">
-
-Sorry, your browser doesn't support embedded videos.
-```
-
-\
-
+{% embed url="https://cdn.jsdelivr.net/gh/Amsterdam/openstad-docs/video/move-widget-dragdrop.mp4" %}
 
 Door de widget te dupliceren wordt een kopie van de widget, met dezelfde instellingen, er direct onder geplaatst. Door op _Edit \[...]_ te klikken opent de pop-up met instellingen. Met de laatste optie verwijder je de widget.
 
-\
-
-
-```
-<source src="/video/duplicate-edit.mp4" type="video/mp4">
-
-Sorry, your browser doesn't support embedded videos.
-```
-
-\
-
+{% embed url="https://cdn.jsdelivr.net/gh/Amsterdam/openstad-docs/video/duplicate-edit.mp4" %}
 
 Als je een account met beperkte rechten hebt (editor) zullen niet alle widgets bewerkbaar zijn.
 
@@ -99,17 +66,7 @@ Om terug te keren naar de laatste gecomitte versie van een pagina, open je eerst
 
 (In _Draft_ modus) _Hoofdmenu_ → _Workflow_ → _Manage_ → _Revert_
 
-\
-
-
-```
-<source src="/video/revert-to-live.mp4" type="video/mp4">
-
-Sorry, your browser doesn't support embedded videos.
-```
-
-\
-
+{% embed url="https://cdn.jsdelivr.net/gh/Amsterdam/openstad-docs/video/revert-to-live.mp4" %}
 
 ### Losse wijzigingen ongedaan maken
 

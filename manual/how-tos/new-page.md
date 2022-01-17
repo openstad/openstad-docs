@@ -30,14 +30,7 @@ Publiceren: (In _Draft_ modus) _Unpublished_ → _Publish Page_ ( → _Commit_)
 
 Publiceren ongedaan maken: (In _Draft_ modus) _Page Menu_ → _Page Settings_ → _Published: No_ → _Save Draft_ ( → _Commit_)
 
-
-<video autoplay loop width="100%">
-
-    <source src="/video/(un)publish.mp4" type="video/mp4">
-
-    Sorry, your browser doesn't support embedded videos.
-
-</video>
+{% embed url="https://cdn.jsdelivr.net/gh/Amsterdam/openstad-docs/video/(un)publish.mp4" %}
 
 ### Hide in navigation
 

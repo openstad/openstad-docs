@@ -8,10 +8,4 @@ In de _Draft_ modus zijn de verschillende widgets te bewerken door er met je mui
 
 Known-issue: In sommige gevallen kan het lastig zijn om (de juiste) bewerkopties zichtbaar te krijgen. Bij grotere widgets is het soms even zoeken in welke hoek de bewerkopties getriggerd worden. Bij kleine widgets, en widgets die vlak bij elkaar geplaatst zijn, krijg je soms de opties van een naastgelegen widget te zien. Dit kan soms even zoeken zijn!
 
-<video autoplay loop width="100%">
-
-    <source src="/video/live-draft.mp4" type="video/mp4">
-
-    Sorry, your browser doesn't support embedded videos.
-
-</video>
+{% embed url="https://cdn.jsdelivr.net/gh/Amsterdam/openstad-docs/video/live-draft.mp4" %}
