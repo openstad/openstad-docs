@@ -10,9 +10,9 @@ Je kunt later terug naar deze instellingen door wanneer je (In _Draft_ modus) op
 
 ## Slug
 
-In het \_Basics \_tabblad onder _Page Settings_ kies je onder het kopje _Slug_ de URL van de nieuwe pagina. Oftewel wat er achter de _basis URL_ (projectnaam.nl) komt te staan om bij de nieuwe pagina te komen: projectnaam.nl/slug. Het is belangrijk dat er geen spaties staan in de slug, dus gebruik bij meerdere woorden tussen-streepjes. De [slug ](new-page.md#slug)begint altijd met een _forward slash_; /.
+In het _Basics_ tabblad onder _Page Settings_ kies je onder het kopje _Slug_ de URL van de nieuwe pagina. Oftewel wat er achter de _basis URL_ (projectnaam.nl) komt te staan om bij de nieuwe pagina te komen: projectnaam.nl/slug. Het is belangrijk dat er geen spaties staan in de slug, dus gebruik bij meerdere woorden tussen-streepjes. De _slug_ begint altijd met een _forward slash_; /.
 
-Als je een nieuwe pagina aanmaakt vanaf een pagina die niet Home is, krijg je last van _nesting_. Er komen twee _slashes_ in je URL te staan (projectnaam.nl/pagina/nieuwepagina), dit kan een verwarrende URL opleveren, dus maak hier liever één van (projectnaam.nl/nieuwepagina).
+Als je een nieuwe pagina aanmaakt vanaf een pagina die niet \_Home \_is, krijg je last van _nesting_. Er komen twee _slashes_ in je URL te staan (projectnaam.nl/pagina/nieuwepagina), dit kan een verwarrende URL opleveren, dus maak hier liever één van (projectnaam.nl/nieuwepagina).
 
 ## (Nog niet) publiceren
 
@@ -32,7 +32,7 @@ Publiceren ongedaan maken: (In _Draft_ modus) _Page Menu_ → _Page Settings_ �
 
 ## Hide in navigation
 
-Ook kun je in het \_basics \_tabblad aangeven of de pagina verstopt moet worden in de menubalk; Hide in Navigation → _Yes/No_. Wanneer je een pagina wil aanmaken die alleen te bezoeken is via een knop/link op een andere pagina vul je hier _Yes_ in. Dit geldt bijvoorbeeld voor formulier pagina’s maar ook voor de pagina’s over cookies en de privacy verklaring. Wanneer je hier _No_ invult verschijnt de pagina naast Home en je andere pagina’s in de menubalk.
+Ook kun je in het _basics_ tabblad aangeven of de pagina verstopt moet worden in de menubalk; Hide in Navigation → _Yes/No_. Wanneer je een pagina wil aanmaken die alleen te bezoeken is via een knop/link op een andere pagina vul je hier _Yes_ in. Dit geldt bijvoorbeeld voor formulier pagina’s maar ook voor de pagina’s over cookies en de privacy verklaring. Wanneer je hier _No_ invult verschijnt de pagina naast _Home_ en je andere pagina’s in de menubalk.
 
 Klik op _Save Draft_ rechts bovenin om je nieuwe pagina aan te maken. Je kunt later terug naar deze instellingen door wanneer je op de pagina bent op Page menu → Page Settings te klikken of via OpenStad → Pages _en dan achter de naam van de pagina_ op Settings te klikken.
 
