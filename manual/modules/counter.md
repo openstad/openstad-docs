@@ -14,4 +14,4 @@ Met _counter_ heb je maar een paar instellingen:
   * _Voted user count_: het aantal gebruikers die een stem hebben uitgebracht (Als 1 persoon op 3 inzendingen stemt, dan telt het als 1 _voted user_).
   * _Static count_: TODO&#x20;
   * _Choices guide count_: TODO&#x20;
-* Styles for the container: Deze module beschikt over de standaard CSS styling mogelijkheden, zie … . \[TODO - link toevoegen ]
+* Styles for the container: Deze module beschikt over de standaard CSS styling mogelijkheden, zie [styles for the container.](../miscellaneous/styles-for-the-container.md)

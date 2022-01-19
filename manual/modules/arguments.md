@@ -24,4 +24,4 @@ _The ideaId can also be set fixed in the module settings;_
   * _Form intro_: optionele introductie tekst bovenaan waar gebruikers opmerkingen kunnen plaatsen.
   * _Placeholder tekst_: de tekst die verschijnt in het invul-balkje als een gebruiker nog niks heeft geschreven.
 * Info:
-  * Styles for the container: Deze module beschikt over de standaard CSS styling mogelijkheden, zie … . \[TODO - link toevoegen ]
+  * Styles for the container: Deze module beschikt over de standaard CSS styling mogelijkheden, zie [styles for the container.](../miscellaneous/styles-for-the-container.md)

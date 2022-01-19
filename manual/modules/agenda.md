@@ -13,4 +13,4 @@ Met een agenda kan je de planning/tijdlijn aangeven van het project. Het is bela
 
 ### Styling&#x20;
 
-* Styles for the container: Deze module beschikt over de standaard CSS styling mogelijkheden, zie … . \[TODO - link toevoegen ]
+* Styles for the container: Deze module beschikt over de standaard CSS styling mogelijkheden, zie [styles for the container.](../miscellaneous/styles-for-the-container.md)

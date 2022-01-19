@@ -22,4 +22,4 @@ De _date countdown bar_ is een dynamisch element wat je laat aftellen tot een be
 
 ### Styling&#x20;
 
-* Styles for the container: Deze module beschikt over de standaard CSS styling mogelijkheden, zie … . \[TODO - link toevoegen ]
+* Styles for the container: Deze module beschikt over de standaard CSS styling mogelijkheden, zie [styles for the container.](../miscellaneous/styles-for-the-container.md)
