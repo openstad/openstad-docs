@@ -45,7 +45,7 @@
     * [Columns](manual/modules/section-columns.md)
     * [Slider](manual/modules/slider.md)
     * [Counter](manual/modules/counter.md)
-    * [Date bar](manual/modules/date-bar.md)
+    * [Date countdown bar](manual/modules/date-bar.md)
     * [Idea form](manual/modules/idea-form.md)
     * [Ideas map](manual/modules/idea-map.md)
     * [Ideas overview](manual/modules/idea-overview.md)
