@@ -6,9 +6,9 @@ Met _arguments_ kan je een lijst aan argumenten tonen die geplaatst zijn op een 
 
 __
 
-_Dit stond hier al in maar snap ik niet helemaal: Voor een dynamic idea, de url moet een page type idea zijn of de ideaId parameter hebben in de url._&#x20;
+_<mark style="color:orange;">Dit stond hier al in maar snap ik niet helemaal: Voor een dynamic idea, de url moet een page type idea zijn of de ideaId parameter hebben in de url.</mark>_&#x20;
 
-_The ideaId can also be set fixed in the module settings;_
+_<mark style="color:orange;">The ideaId can also be set fixed in the module settings;</mark>_
 
 ## Configuratie-opties
 

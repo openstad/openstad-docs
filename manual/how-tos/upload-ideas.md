@@ -1,17 +1,10 @@
 # Inzendingen uploaden
 
-Er zijn twee gebruiksgroepen die inzendingen willen uploaden. De eerste is bewoners, wanneer ze een plan willen indienen voor een begroot traject of een ontwerp voor een wedstrijd. De tweede groep is het projectteam van de gemeente zelf. Ook wanneer er een keuze aan bewoners wordt voorgelegd waarop gestemd kan worden, noemen we deze keuzeopties ook inzendingen. In het systeem worden ze namelijk op dezelfde manier gemaakt; met een _idea form._
+Er zijn twee gebruiksgroepen die inzendingen willen uploaden. De eerste is bewoners, wanneer ze een plan willen indienen voor een begroot traject of een ontwerp voor een wedstrijd. De tweede groep is het projectteam van de gemeente zelf. Bewoners kunnen dan stemmen/hun voorkeur uitspreken/reageren op de inzendingen van de gemeente. Ook wanneer er een keuze aan bewoners wordt voorgelegd waarop gestemd kan worden, noemen we deze keuzeopties ook inzendingen. In het systeem worden ze namelijk op dezelfde manier gemaakt; met een _resource form._
 
-Een [resource form](../modules/resource-form.md) is een van de widgets waarmee je een [_pagina kunt vullen_](edit-page.md). Het is een formulier waarmee je een inzending kunt uploaden. Lees in het widget hoofdstuk hoe je het formulier aan kunt passen.
+Een [resource form](../modules/resource-form.md) is de widgets waarmee je inzendingen uploaden mogelijk maakt. Het is een formulier waarmee je een inzending kunt uploaden. Bewoners of de gemeente kunnen gebruik van het formulier maken. Lees in het widget hoofdstuk van _resource form_ hoe je het formulier aan kunt passen.
 
-
-
-
-
-We hebben voor de _resource form_ widget twee gebruikersgroepen geïdentificeerd; bewoners, wanneer ze bijvoorbeeld een plan willen insturen voor een begrotingstraject; en het projectteam van de gemeente zelf, wanneer de keuzes opties al zijn gemaakt en die ter stemming worden gebracht bij bewoners.
-
-1. Bewoners kunnen zelf plannen/ideeën/ontwerpen inzenden
-2. Bewoners kunnen stemmen/hun voorkeur uitspreken/ reageren op voorstellen van de gemeente.
+Na het maken van een resource form (de formulier wat bewoners/de gemeente gaat gebruiken), moet je de [inzendingen ook weergeven](show-ideas.md) zodat ze zichtbaar zijn voor gebruikers op de website. Dit wordt uitgelegd in het volgende how-to.
 
 ## Bewoners gaan inzendingen uploaden:
 
@@ -35,7 +28,13 @@ We hebben voor de _resource form_ widget twee gebruikersgroepen geïdentificeerd
 
 Een uploader van een inzending ontvangt automatisch een _thankyou_ email, dat de inzending is ingestuurd, op de email van zijn geregistreerde account (waarmee de inzending was geüpload).&#x20;
 
-<mark style="color:orange;">**TODO ik kan dit even niet vinden**</mark>
+Het email kun je instellen in de [admin panel](../miscellaneous/adminpanel.md). Ga naar Settings > Ideas en scroll naar beneden voor het kopje _Thank you email._
+
+![Thank you email weergave in het admin panel](<../../.gitbook/assets/image (3).png>)
+
+De email wordt geschreven in html. Hier staat een korte uitleg over als je klikt op _'More info on the E-mail Template'._
+
+Indien je gebruik maakt van het template ['Plannen insturen'](new-site.md#template-website), staat er een email ingesteld met algemene informatie. Dit kun je aanpassen naar jouw projectgegevens.&#x20;
 
 ## Moderators gaan inzendingen uploaden
 

@@ -1,8 +1,11 @@
 # Rollen
 
-[TODO]
+_work in progress_
 
-* gebruiker
-* moderator
-* editor
-* admin
+### gebruiker
+
+### Moderator
+
+### Editor
+
+### Admin
