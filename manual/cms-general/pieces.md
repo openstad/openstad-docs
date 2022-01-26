@@ -6,8 +6,8 @@ Pagina’s zijn opgebouwd uit een verzameling van verschillende _widgets_, welke
 
 Je voegt widgets toe door een _column section_ of _icon section_ toe te voegen aan een pagina:
 
-_TODO filmpje sections toevoegen._
-
-__
+{% file src="../../.gitbook/assets/Screen Recording 2022-01-26 at 5.31.30 PM.mov" %}
+TODO dit embedden&#x20;
+{% endfile %}
 
 Zodra je kolommen en onderdelen hebt op je pagina, kun je deze vullen met widgets.&#x20;
