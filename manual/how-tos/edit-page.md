@@ -1,6 +1,6 @@
 # Pagina's vullen
 
-Pagina’s worden opgebouwd door ze te vullen met de verschillende beschikbare _widgets_. Maar eerst moet de layout van een pagina bepaald worden met _sections_ en _columns_, zodat de widgets een bepaalde positie op de pagina krijgen.
+Pagina’s worden opgebouwd door ze te vullen met de verschillende beschikbare [_widgets_](../modules/). Maar eerst moet de layout van een pagina bepaald worden met _sections_ en _columns_, zodat de widgets een bepaalde positie op de pagina krijgen.
 
 ## Sections en columns
 
@@ -13,8 +13,6 @@ Als de pagina nog helemaal leeg is, dan verschijnt er vanzelf een ‘+’-icoont
 Klik op het ‘+’-icoontje en kies voor _Add a section_. Er verschijnt nu een pop-up scherm getiteld _Column Section_. Er zijn hier verschillende dingen in te stellen, maar de belangrijkste is het onderdeel _Columns_. Hieronder kies je het aantal en de procentuele verdeling van de breedte van de kolommen die in de section geplaatst worden. Daarnaast kun je hier ook eventueel een achtergrondkleur of een achtergrondafbeelding kiezen.
 
 {% embed url="https://cdn.jsdelivr.net/gh/Amsterdam/openstad-docs/video/add-section.mp4" %}
-
-
 
 ## Widgets
 
@@ -44,7 +42,6 @@ Widgets op de pagina zijn aan te passen via het mouseover-menu. Beweeg de muisaa
 De eerste drie opties kunnen gebruikt worden om de positie van de widget te veranderen. Door op de tweede en derde knop te klikken verplaats je de widget respectievelijk naar boven en naar beneden, maar dit werkt alleen binnen een kolom, je kunt op deze manier niet een widget van de ene naar de andere kolom verplaatsen.
 
 {% embed url="https://cdn.jsdelivr.net/gh/Amsterdam/openstad-docs/video/move-widget-buttons.mp4" %}
-
 
 Als je de eerste knop met de muis ingedrukt houdt, dan kun je de widget door te slepen op een andere locatie plaatsen. Terwijl je aan het slepen bent dan zie je op de pagina omlijnde gebieden verschijnen, welke aangeven dat je de widget op die plek los kunt laten. Op deze manier kun je widgets ook van de ene kolom naar de andere kolom verplaatsen.
 
