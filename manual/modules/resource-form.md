@@ -46,7 +46,7 @@ Zo zien vragen er dan ongeveer uit. Met aanvullende instellingen kun je ook een 
 
 De widget is standaard ingericht met bepaalde vragen. Dit zijn vragen die je vaak gebruikt bij een participatief begroten proces, waarbij indieners een aantal basis dingen moeten toelichten over hun plan of initiatief.&#x20;
 
-Maar je kunt ook nieuwe vragen toevoegen. Pas eerst de organisatie van het formulier aan: [Algemeen ](resource-form.md#algemeen)> How do you want to organise the form > Static with dynamic fields appended **of** Dynamic.&#x20;
+Maar je kunt ook nieuwe vragen toevoegen. Pas eerst de organisatie van het formulier aan: [Algemeen ](resource-form.md#algemeen)> How do you want to organise the form > Static with dynamic fields appended (hiermee gebruik je de standaard vragen én aanvullende vragen die jij bedenkt) **of** Dynamic (hiermee richt je helemaal zelf het formulier in).&#x20;
 
 ![Nieuwe vragen toevoegen via Form Sections](https://lh5.googleusercontent.com/laEAqbl9dzXsE-QlLJD4p9hQ7xaT7EnU1jhrWVlcJmywBKN8Z7yKBt4KalmG1hXRzxtQs2NVpR36kaGBVg8Vy0ObXy\_23ZjU-kXG5e7FsyBmO6rgxFN8ezMaKtK4l6twhVAuy7Q5)
 
