@@ -30,7 +30,7 @@ Een uploader van een inzending ontvangt automatisch een _thankyou_ email, dat de
 
 Het email kun je instellen in de [admin panel](../miscellaneous/adminpanel.md). Ga naar Settings > Ideas en scroll naar beneden voor het kopje _Thank you email._
 
-![Thank you email weergave in het admin panel](<../../.gitbook/assets/image (3).png>)
+![Thank you email weergave in het admin panel](<../../.gitbook/assets/image (3) (1).png>)
 
 De email wordt geschreven in html. Hier staat een korte uitleg over als je klikt op _'More info on the E-mail Template'._
 
