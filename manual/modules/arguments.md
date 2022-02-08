@@ -6,7 +6,9 @@ Met _arguments_ kan je een lijst aan argumenten tonen die geplaatst zijn op een 
 
 __
 
-_<mark style="color:orange;">Dit stond hier al in maar snap ik niet helemaal: Voor een dynamic idea, de url moet een page type idea zijn of de ideaId parameter hebben in de url.</mark>_&#x20;
+_<mark style="color:orange;">Dit stond hier al in maar snap ik niet helemaal:</mark>_&#x20;
+
+_<mark style="color:orange;">Voor een dynamic idea, de url moet een page type idea zijn of de ideaId parameter hebben in de url.</mark>_&#x20;
 
 _<mark style="color:orange;">The ideaId can also be set fixed in the module settings;</mark>_
 
@@ -25,3 +27,12 @@ _<mark style="color:orange;">The ideaId can also be set fixed in the module sett
   * _Placeholder tekst_: de tekst die verschijnt in het invul-balkje als een gebruiker nog niks heeft geschreven.
 * Info:
   * Styles for the container: Deze module beschikt over de standaard CSS styling mogelijkheden, zie [styles for the container.](../miscellaneous/styles-for-the-container.md)
+
+
+
+## Sluiten mogelijkheid om argumenten te plaatsen
+
+Aan het einde van de reactietermijn, kun je arguments 'uitzetten', zodat gebruikers geen reacties meer kunnen plaatsen. Dat gaat als volgt:
+
+* via [adminpanel-beta.md](../miscellaneous/adminpanel-beta.md "mention") > Site settings > Arguments
+* doe het schuifje aan: "Adding of arguments is closed?"
