@@ -20,6 +20,7 @@
     * [Participatief begroten](manual/processes/participatory-budgeting.md)
   * [How-to's](manual/how-tos/README.md)
     * [Nieuwe site aanmaken](manual/how-tos/new-site.md)
+    * [Plan email templates instellen](manual/how-tos/idea-email-templates.md)
     * [Nieuwe pagina's toevoegen](manual/how-tos/new-page.md)
     * [Pagina's vullen](manual/how-tos/edit-page.md)
     * [Inzendingen uploaden](manual/how-tos/upload-ideas.md)
